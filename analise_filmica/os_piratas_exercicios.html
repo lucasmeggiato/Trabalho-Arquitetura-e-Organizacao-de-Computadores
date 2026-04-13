@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação - Piratas do Vale do Silício</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --highlight-bg: #fff3cd;
+            --highlight-text: #856404;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+            font-size: 22px;
+        }
+
+        .questao {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+        }
+
+        .enunciado {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .alternativas {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .alternativa {
+            padding: 5px 10px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+
+        .correta {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            font-weight: bold;
+            border: 1px dashed var(--highlight-text);
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .correta { background-color: yellow !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🏴‍☠️ Avaliação – Piratas do Vale do Silício</h1>
+
+    <h2>📋 Questões</h2>
+
+    <div class="questao">
+        <span class="enunciado">1. Qual foi o primeiro computador para o qual Bill Gates e Paul Allen desenvolveram software, conforme retratado no filme?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Apple II</li>
+            <li class="alternativa">b) IBM PC</li>
+            <li class="alternativa correta">c) Altair 8800</li>
+            <li class="alternativa">d) Commodore 64</li>
+            <li class="alternativa">e) Xerox Alto</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">2. Qual linguagem de programação Bill Gates e Paul Allen desenvolveram para o Altair, no início do filme?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) FORTRAN</li>
+            <li class="alternativa">b) COBOL</li>
+            <li class="alternativa">c) C</li>
+            <li class="alternativa correta">d) BASIC</li>
+            <li class="alternativa">e) Assembly</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">3. Qual foi a filosofia de vida de Bill Gates expressa no filme para explicar como se "sobrevive" no mundo dos negócios?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) "O cliente tem sempre razão"</li>
+            <li class="alternativa">b) "Inove ou morra"</li>
+            <li class="alternativa correta">c) "Você faz as pessoas precisarem de você"</li>
+            <li class="alternativa">d) "O conhecimento é poder"</li>
+            <li class="alternativa">e) "Primeiro o mercado, depois o produto"</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">4. A quem Bill Gates se referia quando citou a frase da máfia: "Mantenha seus amigos por perto e seus inimigos ainda mais perto"?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Apple</li>
+            <li class="alternativa correta">b) IBM</li>
+            <li class="alternativa">c) Xerox</li>
+            <li class="alternativa">d) Hewlett-Packard</li>
+            <li class="alternativa">e) Atari</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">5. Em uma reunião crucial, Gates e sua equipe afirmaram a executivos bem-vestidos que a Microsoft tinha o que eles precisavam. Qual produto eles estavam vendendo?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Windows</li>
+            <li class="alternativa">b) Microsoft BASIC</li>
+            <li class="alternativa correta">c) MS-DOS</li>
+            <li class="alternativa">d) Microsoft Office</li>
+            <li class="alternativa">e) Word</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">6. No momento da negociação com a IBM, o que Steve Ballmer revela ao quebrar a quarta parede e falar diretamente com o espectador?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Que a Microsoft já tinha o sistema operacional pronto há anos</li>
+            <li class="alternativa">b) Que Bill Gates estava mentindo sobre o preço</li>
+            <li class="alternativa correta">c) Que a Microsoft não tinha nada naquele momento</li>
+            <li class="alternativa">d) Que a IBM iria recusar a oferta</li>
+            <li class="alternativa">e) Que Paul Allen havia vendido a empresa escondido</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">7. Qual foi a tática que Bill Gates usou no aeroporto para fazer o avião esperar por ele e não perder o voo para a Califórnia?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Disse que era o dono da Microsoft</li>
+            <li class="alternativa">b) Ofereceu dinheiro ao piloto</li>
+            <li class="alternativa correta">c) Exagerou sobre o perigo de vírus de computador no sistema do aeroporto</li>
+            <li class="alternativa">d) Disse que estava com uma reunião com Steve Jobs</li>
+            <li class="alternativa">e) Alegou problema médico urgente</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">8. O que Steve Jobs disse a John Sculley para convencê-lo a deixar a Pepsi-Cola e se tornar CEO da Apple?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) "Vamos mudar o mundo juntos"</li>
+            <li class="alternativa correta">b) "Você quer vender água com açúcar pelo resto da vida ou quer fazer história?"</li>
+            <li class="alternativa">c) "A Apple vai pagar o dobro do seu salário"</li>
+            <li class="alternativa">d) "Você será lembrado como o maior executivo da história"</li>
+            <li class="alternativa">e) "Os computadores vão dominar o mundo"</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">9. Qual foi o motivo da hospitalização de Steve Wozniak durante parte do filme?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Acidente de carro</li>
+            <li class="alternativa">b) Ataque cardíaco</li>
+            <li class="alternativa correta">c) Acidente de avião particular</li>
+            <li class="alternativa">d) Esgotamento físico e estresse</li>
+            <li class="alternativa">e) Doença grave não especificada</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">10. No bar, após a saída de Wozniak do hospital, as equipes do Apple II e do Macintosh se confrontam enquanto uma música toca ao fundo. Qual canção dos anos 1980 é tocada nessa cena?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) "Burning Down the House" – Talking Heads</li>
+            <li class="alternativa correta">b) "Everybody Wants To Rule The World" – Tears For Fears</li>
+            <li class="alternativa">c) "Sweet Dreams" – Eurythmics</li>
+            <li class="alternativa">d) "Money for Nothing" – Dire Straits</li>
+            <li class="alternativa">e) "Don't You (Forget About Me)" – Simple Minds</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">11. Durante uma entrevista de emprego na Apple, Steve Jobs humilha um candidato nervoso e gago. Qual foi o motivo para tratá-lo dessa forma?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) O candidato era ex-funcionário da IBM</li>
+            <li class="alternativa">b) O candidato era mais velho que Jobs</li>
+            <li class="alternativa correta">c) O candidato era virgem</li>
+            <li class="alternativa">d) O candidato não sabia programar</li>
+            <li class="alternativa">e) O candidato usava terno e gravata</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">12. Qual empresa Steve Jobs e Bill Gates "roubaram" para obter a tecnologia do mouse e da interface gráfica (GUI), conforme discutido no filme?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) IBM</li>
+            <li class="alternativa">b) Hewlett-Packard</li>
+            <li class="alternativa">c) Microsoft</li>
+            <li class="alternativa correta">d) Xerox</li>
+            <li class="alternativa">e) Atari</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">13. Como Steve Jobs se justificou ao dizer "Good artists copy, great artists steal" ("Artistas bons copiam, artistas geniais roubam")?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Citou Michelangelo como autor da frase</li>
+            <li class="alternativa">b) Disse que era um ditado popular alemão</li>
+            <li class="alternativa correta">c) Atribuiu a frase a Picasso, mas Bill Gates posteriormente atribuiu a Van Gogh</li>
+            <li class="alternativa">d) Disse que aprendeu com Wozniak</li>
+            <li class="alternativa">e) Afirmou que era uma frase de sua autoria</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">14. Qual era o nome do primeiro computador da Apple com interface gráfica (GUI), anterior ao Macintosh?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Apple III</li>
+            <li class="alternativa correta">b) Lisa</li>
+            <li class="alternativa">c) Apple IIe</li>
+            <li class="alternativa">d) Macintosh XL</li>
+            <li class="alternativa">e) Newton</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">15. Qual foi a reação de Steve Jobs ao descobrir o Windows e confrontar Bill Gates por "roubar" a interface gráfica da Apple?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Jobs processou a Microsoft imediatamente</li>
+            <li class="alternativa">b) Jobs ficou em silêncio e cortou relações</li>
+            <li class="alternativa correta">c) Gates rebateu dizendo que a Apple também "roubou" da Xerox, e que ele chegou primeiro</li>
+            <li class="alternativa">d) Gates pediu desculpas publicamente</li>
+            <li class="alternativa">e) A cena do confronto não ocorre no filme</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">16. Qual famoso diretor de cinema foi contratado pela Apple para dirigir o comercial "1984" para o Macintosh, cena que abre o filme?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Steven Spielberg</li>
+            <li class="alternativa">b) George Lucas</li>
+            <li class="alternativa correta">c) Ridley Scott</li>
+            <li class="alternativa">d) Francis Ford Coppola</li>
+            <li class="alternativa">e) James Cameron</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">17. O filme é narrado por dois personagens alternadamente. Quem são eles?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Steve Jobs e Bill Gates</li>
+            <li class="alternativa correta">b) Steve Wozniak e Steve Ballmer</li>
+            <li class="alternativa">c) Paul Allen e John Sculley</li>
+            <li class="alternativa">d) Steve Jobs e Steve Wozniak</li>
+            <li class="alternativa">e) Bill Gates e Paul Allen</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">18. Qual era o nome do sistema operacional que a Seattle Computer Products vendeu para a Microsoft por US$ 50.000, posteriormente licenciado para a IBM como MS-DOS?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) CP/M</li>
+            <li class="alternativa correta">b) QDOS (Quick and Dirty Operating System)</li>
+            <li class="alternativa">c) UNIX</li>
+            <li class="alternativa">d) DR-DOS</li>
+            <li class="alternativa">e) PC-DOS</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">19. No final do filme, após o retorno de Steve Jobs à Apple em 1997, qual anúncio surpreendente ele fez no palco da Macworld?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) O lançamento do iPhone</li>
+            <li class="alternativa">b) O fim da parceria com a Microsoft</li>
+            <li class="alternativa correta">c) Um acordo de investimento da Microsoft na Apple</li>
+            <li class="alternativa">d) A aposentadoria de Bill Gates</li>
+            <li class="alternativa">e) O lançamento do iMac</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">20. Qual das seguintes afirmações sobre as reações dos verdadeiros protagonistas ao filme é correta?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Steve Jobs odiou o filme e processou os produtores</li>
+            <li class="alternativa">b) Bill Gates processou o estúdio por difamação</li>
+            <li class="alternativa correta">c) Steve Jobs ficou tão impressionado com a atuação de Noah Wyle que o convidou para abrir a Macworld de 1999</li>
+            <li class="alternativa">d) Steve Wozniak recusou-se a assistir ao filme</li>
+            <li class="alternativa">e) Bill Gates afirmou publicamente que o filme era "totalmente falso"</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação - Microprocessadores e Computadores Pessoais</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --highlight-bg: #fff3cd;
+            --highlight-text: #856404;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --answer-bg: #e8f4f8;
+            --answer-border: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+            font-size: 22px;
+        }
+
+        .questao {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+        }
+
+        .enunciado {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .alternativas {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .alternativa {
+            padding: 5px 10px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+
+        .correta {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            font-weight: bold;
+            border: 1px dashed var(--highlight-text);
+        }
+
+        /* Estilo para as respostas discursivas */
+        .resposta-discursiva {
+            background-color: var(--answer-bg);
+            border-left: 4px solid var(--answer-border);
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+        }
+        
+        .label-resposta {
+            font-weight: bold;
+            font-style: normal;
+            color: var(--answer-border);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .correta { background-color: yellow !important; -webkit-print-color-adjust: exact; }
+            .resposta-discursiva { background-color: #f0f0f0 !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📘 Avaliação – A Era dos Microprocessadores</h1>
+
+    <h2>🟢 Parte I – Questões Objetivas (1–10)</h2>
+
+    <div class="questao">
+        <span class="enunciado">1. O primeiro microprocessador comercial foi o:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Intel 8086</li>
+            <li class="alternativa">b) Motorola 68000</li>
+            <li class="alternativa correta">c) Intel 4004</li>
+            <li class="alternativa">d) MOS 6502</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">2. O Intel 4004 foi lançado no ano de:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) 1965</li>
+            <li class="alternativa correta">b) 1971</li>
+            <li class="alternativa">c) 1978</li>
+            <li class="alternativa">d) 1981</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">3. O microprocessador utilizado no Apple I foi o:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Intel 8080</li>
+            <li class="alternativa">b) Intel 8086</li>
+            <li class="alternativa correta">c) MOS 6502</li>
+            <li class="alternativa">d) Motorola 68040</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">4. O Apple I foi criado por:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Bill Gates e Paul Allen</li>
+            <li class="alternativa correta">b) Steve Jobs e Steve Wozniak</li>
+            <li class="alternativa">c) Gordon Moore e Robert Noyce</li>
+            <li class="alternativa">d) Alan Turing e John von Neumann</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">5. O computador que consolidou o padrão x86 foi o:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Apple II</li>
+            <li class="alternativa">b) Macintosh</li>
+            <li class="alternativa correta">c) IBM PC</li>
+            <li class="alternativa">d) Commodore 64</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">6. O Apple Macintosh (1984) utilizava qual microprocessador?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Intel 4004</li>
+            <li class="alternativa">b) Intel 8086</li>
+            <li class="alternativa correta">c) Motorola 68000</li>
+            <li class="alternativa">d) MOS 6502</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">7. A arquitetura ARM passou a ser utilizada pela Apple oficialmente em Macs a partir de:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) 1990</li>
+            <li class="alternativa">b) 2000</li>
+            <li class="alternativa">c) 2006</li>
+            <li class="alternativa correta">d) 2020</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">8. O primeiro chip da linha Apple Silicon foi o:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) A10</li>
+            <li class="alternativa correta">b) M1</li>
+            <li class="alternativa">c) PowerPC</li>
+            <li class="alternativa">d) Pentium</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">9. A Lei de Moore afirma que:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) O preço dos computadores dobra a cada ano</li>
+            <li class="alternativa">b) O tamanho dos chips aumenta constantemente</li>
+            <li class="alternativa correta">c) O número de transistores em um chip dobra aproximadamente a cada dois anos</li>
+            <li class="alternativa">d) A velocidade da internet dobra anualmente</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">10. O Apple II foi importante porque:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Foi o primeiro computador com válvulas</li>
+            <li class="alternativa correta">b) Popularizou o computador pessoal</li>
+            <li class="alternativa">c) Introduziu o microprocessador 64 bits</li>
+            <li class="alternativa">d) Criou a internet</li>
+        </ul>
+    </div>
+
+    <h2>🟡 Parte II – Questões Discursivas (11–20)</h2>
+
+    <div class="questao">
+        <span class="enunciado">11. Explique o que é um microprocessador.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Um microprocessador é uma Unidade Central de Processamento (CPU) inteira incorporada em um único circuito integrado (chip). Ele concentra a Unidade de Controle, a Unidade Lógica e Aritmética (ULA) e os registradores necessários para buscar, decodificar e executar instruções de máquina, atuando como o "cérebro" autossuficiente de um sistema computacional.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">12. Descreva a importância do Intel 4004 na história da computação.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Lançado em 1971, o Intel 4004 foi o primeiro microprocessador comercial do mundo (um chip de 4 bits). Sua importância está em ter revolucionado o design de hardware ao provar que era possível concentrar toda a lógica de processamento em um único componente de silício, reduzindo drasticamente o custo e o tamanho dos sistemas e pavimentando o caminho para a revolução dos microcomputadores.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">13. Explique como o Apple II contribuiu para a popularização dos computadores pessoais.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Diferente dos kits para hobbystas da época que exigiam montagem e soldagem com ferro de solda, o Apple II foi um dos primeiros computadores a ser vendido montado, "pronto para usar". Ele vinha em um gabinete plástico amigável, com teclado integrado, suporte a gráficos coloridos na TV e linguagem BASIC na ROM. Isso o tornou acessível para usuários leigos, lares e escolas, criando efetivamente o mercado consumidor de computação pessoal.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">14. Compare a arquitetura x86 com a arquitetura ARM utilizada nos chips Apple Silicon.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A arquitetura x86 (dominada por Intel e AMD) é baseada no modelo CISC (Complex Instruction Set Computer), que foca em executar instruções complexas via hardware, o que historicamente resulta em alto consumo de energia e maior dissipação de calor. Já a arquitetura ARM é baseada no modelo RISC (Reduced Instruction Set Computer), utilizando instruções simples executadas em um único ciclo de clock. A abordagem ARM, adotada nos chips Apple Silicon (família M), foca em extrema eficiência energética (performance-por-watt), ideal para integrar CPU, GPU e memória no mesmo encapsulamento (SoC).
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">15. Explique o impacto do IBM PC no mercado mundial.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Lançado em 1981, o IBM PC trouxe legitimidade e confiança ao mercado corporativo de microcomputadores. Seu maior impacto, contudo, derivou de sua "arquitetura aberta", construída com componentes de prateleira (como o processador Intel x86 e o MS-DOS da Microsoft). Essa abertura permitiu que outras fabricantes criassem computadores "clones" cem por cento compatíveis. Isso quebrou o monopólio de hardware único e padronizou toda a indústria global de PCs que utilizamos até hoje.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">16. Descreva a importância do Apple Macintosh para a evolução da interface gráfica.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            O Macintosh, lançado em 1984, foi o primeiro computador pessoal comercialmente viável a popularizar a Interface Gráfica do Usuário (GUI) e o uso do mouse. Ele substituiu as complexas telas escuras de linha de comando por metáforas visuais do dia a dia (arquivos virtuais, pastas, lixeiras, janelas sobrepostas e menus suspensos). Ele democratizou o acesso à computação, provando que sistemas podiam ser operados de forma intuitiva visualmente, modelo que a Microsoft viria a adotar com o Windows.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">17. Analise a decisão da Apple de migrar para chips próprios (M1).</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Ao migrar de processadores Intel (x86) para o Apple Silicon (arquitetura ARM), a Apple assumiu o controle total de sua stack de hardware e software. Os processadores Intel sofriam com gargalos térmicos em notebooks finos. O chip M1 unificou CPU, GPU, aceleradores de IA e memória RAM num SoC (System on a Chip), alcançando um desempenho avassalador com uma fração do consumo de energia. Isso estendeu drasticamente a vida útil da bateria dos MacBooks e permitiu a execução nativa de aplicativos do ecossistema móvel (iOS/iPadOS) em desktops.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">18. Relacione a evolução dos microprocessadores com o surgimento dos smartphones.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Smartphones são essencialmente supercomputadores de bolso que dependem absolutamente da eficiência energética e térmica. O surgimento de aparelhos como o iPhone só foi possível graças à evolução da litografia, que permitiu condensar processadores baseados na arquitetura ARM a escalas nanométricas. Eles oferecem poder de processamento massivo sem a necessidade de ventoinhas (cooler ativo) e consumindo pouquíssima energia de baterias reduzidas.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">19. Explique como a Lei de Moore influenciou o desenvolvimento tecnológico nas últimas décadas.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A Lei de Moore atuou como o grande "metrônomo" da indústria de semicondutores. Ao prever e impulsionar a duplicação do número de transistores a cada dois anos, ela garantiu um crescimento de processamento de forma exponencial, enquanto o custo por operação caía. Isso permitiu prever viabilidades tecnológicas e desenvolver software cada vez mais sofisticado, viabilizando tudo o que conhecemos hoje: desde a renderização 3D e edição em tempo real até o avanço das redes neurais de Inteligência Artificial.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">20. Faça uma linha do tempo resumida da evolução: Intel 4004 → Apple I → IBM PC → Macintosh → Apple Silicon.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            <b>1971 (Intel 4004):</b> O nascimento do primeiro microprocessador comercial, unindo o processamento num chip.<br>
+            <b>1976 (Apple I):</b> O uso do microprocessador (MOS 6502) para criar a placa fundacional da computação pessoal de garagem.<br>
+            <b>1981 (IBM PC):</b> A criação de um padrão corporativo aberto com a aliança Intel x86 e Microsoft, ditando o padrão do mercado moderno.<br>
+            <b>1984 (Macintosh):</b> A revolução da usabilidade, trocando linhas de código por interface gráfica e mouse.<br>
+            <b>2020 (Apple Silicon M1):</b> A transição histórica de arquiteturas CISC (Intel) para SoCs baseados em RISC (ARM) de altíssima eficiência energética nos computadores pessoais.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

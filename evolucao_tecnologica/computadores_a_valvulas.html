@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação - Computadores a Válvulas</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --highlight-bg: #fff3cd;
+            --highlight-text: #856404;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --answer-bg: #e8f4f8;
+            --answer-border: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+
+        .questao {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+        }
+
+        .enunciado {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .alternativas {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .alternativa {
+            padding: 5px 10px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+
+        .correta {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            font-weight: bold;
+            border: 1px dashed var(--highlight-text);
+        }
+
+        /* Estilo para as respostas discursivas */
+        .resposta-discursiva {
+            background-color: var(--answer-bg);
+            border-left: 4px solid var(--answer-border);
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+        }
+        
+        .label-resposta {
+            font-weight: bold;
+            font-style: normal;
+            color: var(--answer-border);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .correta { background-color: yellow !important; -webkit-print-color-adjust: exact; }
+            .resposta-discursiva { background-color: #f0f0f0 !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📘 Avaliação – Computadores a Válvulas</h1>
+
+    <h2>🟢 Parte I – Questões Objetivas (1–10)</h2>
+
+    <div class="questao">
+        <span class="enunciado">1. Os computadores a válvulas pertencem a qual geração da computação?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Terceira geração</li>
+            <li class="alternativa">b) Segunda geração</li>
+            <li class="alternativa correta">c) Primeira geração</li>
+            <li class="alternativa">d) Quarta geração</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">2. A principal tecnologia utilizada nesses computadores era:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Transistores</li>
+            <li class="alternativa">b) Circuitos integrados</li>
+            <li class="alternativa correta">c) Válvulas termiônicas</li>
+            <li class="alternativa">d) Microprocessadores</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">3. Uma válvula termiônica funciona como:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Dispositivo mecânico de rotação</li>
+            <li class="alternativa correta">b) Interruptor eletrônico</li>
+            <li class="alternativa">c) Memória secundária</li>
+            <li class="alternativa">d) Unidade de armazenamento óptico</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">4. O ENIAC utilizava aproximadamente:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) 100 válvulas</li>
+            <li class="alternativa">b) 1.000 válvulas</li>
+            <li class="alternativa correta">c) 18.000 válvulas</li>
+            <li class="alternativa">d) 1 milhão de válvulas</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">5. O Colossus foi utilizado principalmente para:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Jogos eletrônicos</li>
+            <li class="alternativa">b) Controle bancário</li>
+            <li class="alternativa correta">c) Decifração de códigos</li>
+            <li class="alternativa">d) Navegação GPS</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">6. O EDVAC ficou conhecido por introduzir:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Internet</li>
+            <li class="alternativa correta">b) Programa armazenado</li>
+            <li class="alternativa">c) Sistema operacional</li>
+            <li class="alternativa">d) Interface gráfica</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">7. As ideias de programa armazenado estão associadas a:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Alan Turing</li>
+            <li class="alternativa">b) Howard Aiken</li>
+            <li class="alternativa correta">c) John von Neumann</li>
+            <li class="alternativa">d) Grace Hopper</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">8. Uma desvantagem dos computadores a válvulas era:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Baixo consumo de energia</li>
+            <li class="alternativa correta">b) Superaquecimento</li>
+            <li class="alternativa">c) Alta portabilidade</li>
+            <li class="alternativa">d) Baixo custo</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">9. O tamanho físico desses computadores era:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Pequeno</li>
+            <li class="alternativa">b) Portátil</li>
+            <li class="alternativa correta">c) Muito grande</li>
+            <li class="alternativa">d) Similar a um notebook</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">10. O declínio dos computadores a válvulas ocorreu devido à invenção:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Da internet</li>
+            <li class="alternativa correta">b) Do transistor</li>
+            <li class="alternativa">c) Do HD</li>
+            <li class="alternativa">d) Do Wi-Fi</li>
+        </ul>
+    </div>
+
+    <h2>🟡 Parte II – Questões Discursivas (11–15)</h2>
+
+    <div class="questao">
+        <span class="enunciado">11. Explique o funcionamento básico de uma válvula termiônica.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            É um tubo de vidro em vácuo contendo eletrodos. Através do aquecimento de um filamento (efeito termiônico), elétrons são emitidos e fluem do cátodo para o ânodo. No contexto computacional, a aplicação de tensão em uma grade de controle permitia que a válvula bloqueasse ou permitisse esse fluxo de elétrons, funcionando como uma chave (interruptor eletrônico) para representar bits lógicos (0 e 1).
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">12. Descreva as principais características da Primeira Geração da Computação.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A Primeira Geração é marcada pelo uso de válvulas termiônicas, dimensões colossais (máquinas que ocupavam salas ou andares inteiros), altíssimo consumo de energia elétrica, geração extrema de calor (exigindo refrigeração rigorosa), baixa confiabilidade (válvulas queimavam frequentemente), e programação feita fisicamente através de painéis de cabos (plugboards) ou cartões perfurados.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">13. Por que o ENIAC foi considerado revolucionário?</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            O ENIAC foi o primeiro computador eletrônico digital de propósito geral de grande escala. Ele provou que era possível realizar cálculos matemáticos complexos em velocidades eletrônicas (milhares de vezes mais rápido que os computadores eletromecânicos da época), impulsionando a pesquisa que deu origem a toda a indústria da computação.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">14. Quais eram as principais limitações técnicas dos computadores a válvulas?</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            As principais limitações eram a fragilidade e vida útil curta das válvulas, o que causava interrupções diárias no processamento para manutenção; o tamanho físico massivo que impedia qualquer tipo de portabilidade ou escala; e a ineficiência energética, pois quase toda a energia consumida era dissipada na forma de calor.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">15. Explique a importância do conceito de programa armazenado para a evolução da computação.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Antes do programa armazenado, os computadores precisavam ser fisicamente "re-cabeados" para executar tarefas diferentes. O conceito de programa armazenado permitiu que as instruções (o código) e os dados fossem salvos juntos na mesma memória eletrônica. Isso transformou o hardware em uma máquina de propósito geral, onde mudar o software era suficiente para mudar a função da máquina, agilizando drasticamente o desenvolvimento.
+        </div>
+    </div>
+
+    <h2>🔵 Parte III – Questões Aplicadas e Reflexivas (16–20)</h2>
+
+    <div class="questao">
+        <span class="enunciado">16. Compare computadores a válvulas e computadores transistorizados.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Os computadores a válvulas (1ª geração) eram gigantescos, geravam calor excessivo, exigiam manutenção constante e consumiam muita energia. Os transistorizados (2ª geração) substituíram as válvulas por transistores de estado sólido (semicondutores), tornando-se exponencialmente menores, mais rápidos, mais baratos, mais confiáveis e eficientes energeticamente, eliminando a necessidade de aquecimento prévio dos componentes.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">17. Analise como o alto consumo energético impactava a operação dessas máquinas.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            O alto consumo energético exigia uma infraestrutura elétrica dedicada de proporções industriais apenas para alimentar o processador. Isso tornava o custo de operação proibitivo para a maioria das instituições (restringindo o uso a governos e grandes universidades) e gerava um efeito cascata: a enorme quantidade de energia consumida se transformava em calor, exigindo ainda mais energia para alimentar sistemas colossais de ar condicionado.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">18. Explique como o superaquecimento influenciava a confiabilidade do sistema.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            O calor extremo degradava fisicamente os materiais internos das válvulas (como o filamento), resultando em queimas constantes. Como um computador possuía milhares de válvulas, estatisticamente, várias falhavam todos os dias. Cada falha exigia que o processamento fosse interrompido e a válvula queimada localizada e substituída, tornando impossível executar cálculos contínuos por longos períodos com 100% de confiabilidade.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">19. Relacione a evolução dos computadores a válvulas com a Arquitetura de John von Neumann.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            As dificuldades operacionais das primeiras máquinas a válvulas (como o tempo perdido configurando chaves físicas no ENIAC) motivaram Von Neumann a conceber uma arquitetura mais lógica para o projeto seguinte, o EDVAC. A "Arquitetura de von Neumann" resolveu esse gargalo de hardware centralizando o controle (CPU) e unificando a memória para dados e código, padrão de engenharia fundamental utilizado até nos processadores modernos.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">20. Avalie a importância histórica dos computadores a válvulas para a tecnologia atual.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Eles representam o marco zero da computação digital eletrônica. Provaram a viabilidade da aplicação da álgebra booleana e do sistema binário em hardware para a resolução de problemas complexos. Foi durante essa era que nasceram conceitos como sub-rotinas, linguagens de máquina, gerenciamento de memória e a própria Arquitetura de von Neumann, que formam a fundação teórica e prática sobre a qual a Engenharia de Software atual opera.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

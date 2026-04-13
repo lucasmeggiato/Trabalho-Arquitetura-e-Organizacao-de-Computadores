@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura de Computadores - Exercícios</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --highlight-bg: #fff3cd;
+            --highlight-text: #856404;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .questao {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+        }
+
+        .enunciado {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .alternativas {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .alternativa {
+            padding: 5px 10px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+
+        .correta {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            font-weight: bold;
+            border: 1px dashed var(--highlight-text);
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; }
+            .correta { background-color: yellow !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 QUESTÕES OBJETIVAS — COMPONENTES DE UM SISTEMA COMPUTACIONAL</h1>
+
+    <div class="questao">
+        <span class="enunciado">1. Em um sistema computacional, as três grandes camadas tradicionalmente consideradas são:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Hardware, firmware e middleware</li>
+            <li class="alternativa correta">b) Hardware, software e peopleware</li>
+            <li class="alternativa">c) CPU, memória e barramentos</li>
+            <li class="alternativa">d) Sistema operacional, aplicativos e drivers</li>
+            <li class="alternativa">e) Entrada, processamento e saída</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">2. A Unidade Central de Processamento (CPU) é composta fundamentalmente por:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Memória RAM e memória cache</li>
+            <li class="alternativa correta">b) Unidade de controle e unidade lógica e aritmética (ALU)</li>
+            <li class="alternativa">c) Barramento de dados e barramento de endereços</li>
+            <li class="alternativa">d) Dispositivos de entrada e dispositivos de saída</li>
+            <li class="alternativa">e) Sistema operacional e compiladores</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">3. A memória principal (RAM) é caracterizada como:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Não volátil e de alta capacidade</li>
+            <li class="alternativa">b) Volátil e armazena permanentemente o sistema operacional</li>
+            <li class="alternativa correta">c) Volátil e armazena temporariamente dados e instruções em execução</li>
+            <li class="alternativa">d) Não volátil e utilizada exclusivamente para armazenamento secundário</li>
+            <li class="alternativa">e) Volátil e com capacidade superior aos discos rígidos</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">4. Os barramentos em um sistema computacional são responsáveis por:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Executar instruções aritméticas e lógicas</li>
+            <li class="alternativa">b) Armazenar dados permanentemente</li>
+            <li class="alternativa correta">c) Transportar dados, endereços e sinais de controle entre os componentes</li>
+            <li class="alternativa">d) Gerenciar as interrupções geradas por dispositivos</li>
+            <li class="alternativa">e) Interpretar e compilar programas</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">5. Qual das alternativas apresenta corretamente os três tipos principais de barramentos?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Barramento serial, barramento paralelo e barramento USB</li>
+            <li class="alternativa correta">b) Barramento de dados, barramento de endereços e barramento de controle</li>
+            <li class="alternativa">c) Barramento PCI, barramento ISA e barramento SATA</li>
+            <li class="alternativa">d) Barramento de memória, barramento de CPU e barramento de E/S</li>
+            <li class="alternativa">e) Barramento de sistema, barramento de expansão e barramento local</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">6. A largura do barramento de endereços determina diretamente:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) A velocidade de clock do processador</li>
+            <li class="alternativa correta">b) A capacidade máxima de memória endereçável pelo sistema</li>
+            <li class="alternativa">c) O número de dispositivos de E/S que podem ser conectados</li>
+            <li class="alternativa">d) A taxa de transferência de dados entre CPU e memória cache</li>
+            <li class="alternativa">e) O nível de prioridade das interrupções</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">7. As interrupções são mecanismos que permitem:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Aumentar a frequência de clock do processador</li>
+            <li class="alternativa correta">b) Que dispositivos de E/S sinalizem eventos à CPU sem necessidade de monitoramento contínuo</li>
+            <li class="alternativa">c) Armazenar grandes volumes de dados em memória secundária</li>
+            <li class="alternativa">d) Traduzir linguagens de alto nível para código de máquina</li>
+            <li class="alternativa">e) Gerenciar exclusivamente os barramentos de controle</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">8. Quando uma interrupção é recebida pela CPU, a primeira ação realizada é:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Executar imediatamente o tratador de interrupção</li>
+            <li class="alternativa">b) Descartar o programa em execução</li>
+            <li class="alternativa correta">c) Salvar o contexto do programa interrompido</li>
+            <li class="alternativa">d) Reiniciar o sistema operacional</li>
+            <li class="alternativa">e) Desativar todos os dispositivos de E/S</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">9. As interrupções geradas por instruções do programa, como divisão por zero ou acesso inválido à memória, são classificadas como:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Interrupções de hardware</li>
+            <li class="alternativa">b) Interrupções externas</li>
+            <li class="alternativa correta">c) Interrupções de software (exceções)</li>
+            <li class="alternativa">d) Interrupções de temporizador</li>
+            <li class="alternativa">e) Interrupções mascaráveis</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">10. O componente responsável por priorizar múltiplas interrupções simultâneas e encaminhá-las à CPU é chamado de:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Barramento de controle</li>
+            <li class="alternativa">b) Unidade de gerenciamento de memória (MMU)</li>
+            <li class="alternativa correta">c) Controlador de interrupções</li>
+            <li class="alternativa">d) Acelerador de hardware</li>
+            <li class="alternativa">e) Chipset norte</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">11. O mecanismo que permite a transferência de grandes volumes de dados entre dispositivos de E/S e a memória sem intervenção constante da CPU é denominado:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Polling</li>
+            <li class="alternativa">b) Interrupção por vetor</li>
+            <li class="alternativa">c) Barramento compartilhado</li>
+            <li class="alternativa correta">d) Acesso direto à memória (DMA)</li>
+            <li class="alternativa">e) Cache de E/S</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">12. Na hierarquia de memória, os registradores e as memórias cache (L1, L2, L3) são utilizados para:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Armazenar permanentemente o sistema operacional</li>
+            <li class="alternativa">b) Substituir completamente a memória RAM</li>
+            <li class="alternativa correta">c) Equilibrar velocidade e capacidade, reduzindo a latência de acesso</li>
+            <li class="alternativa">d) Conectar dispositivos de E/S ao processador</li>
+            <li class="alternativa">e) Realizar operações de entrada e saída</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">13. Na arquitetura de von Neumann, uma limitação clássica é que:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Dados e instruções são armazenados separadamente em memórias distintas</li>
+            <li class="alternativa">b) A CPU não utiliza barramentos para comunicação</li>
+            <li class="alternativa correta">c) Dados e instruções compartilham o mesmo barramento e a mesma memória, gerando um gargalo</li>
+            <li class="alternativa">d) Não há suporte a interrupções</li>
+            <li class="alternativa">e) A memória é exclusivamente não volátil</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">14. O software de sistema inclui, entre outros componentes:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Planilhas eletrônicas e editores de texto</li>
+            <li class="alternativa correta">b) Compiladores, sistemas operacionais e drivers de dispositivos</li>
+            <li class="alternativa">c) Navegadores de internet e jogos</li>
+            <li class="alternativa">d) Sistemas de gestão empresarial (ERP)</li>
+            <li class="alternativa">e) Aplicativos de edição de imagens</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">15. O peopleware em um sistema computacional refere-se:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Aos cabos e conectores utilizados na instalação</li>
+            <li class="alternativa">b) Aos programas de inteligência artificial</li>
+            <li class="alternativa correta">c) Aos usuários e profissionais envolvidos na operação, desenvolvimento e manutenção</li>
+            <li class="alternativa">d) Às máquinas virtuais e contêineres</li>
+            <li class="alternativa">e) Aos dispositivos de armazenamento externo</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">16. Qual dos seguintes componentes é responsável por traduzir instruções escritas em linguagens de programação para código executável pelo hardware?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Sistema operacional</li>
+            <li class="alternativa">b) Barramento de controle</li>
+            <li class="alternativa correta">c) Compilador ou interpretador</li>
+            <li class="alternativa">d) Controlador de interrupções</li>
+            <li class="alternativa">e) Unidade de gerenciamento de memória</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">17. O ciclo básico de processamento em um sistema computacional é composto por:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Leitura, interpretação, execução e escrita</li>
+            <li class="alternativa correta">b) Entrada, processamento, saída e armazenamento</li>
+            <li class="alternativa">c) Coleta, análise, exibição e backup</li>
+            <li class="alternativa">d) Codificação, decodificação, transmissão e recepção</li>
+            <li class="alternativa">e) Inicialização, execução, suspensão e término</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">18. Os dispositivos de entrada e saída (E/S) comunicam-se com o sistema por meio de:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Barramentos exclusivos de vídeo</li>
+            <li class="alternativa correta">b) Controladores de E/S e mecanismos como DMA</li>
+            <li class="alternativa">c) Apenas interrupções de software</li>
+            <li class="alternativa">d) Memória cache compartilhada</li>
+            <li class="alternativa">e) Registradores internos da ALU</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">19. Em sistemas modernos, os barramentos ponto a ponto, como PCI Express, são utilizados principalmente para:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Substituir completamente a memória RAM</li>
+            <li class="alternativa correta">b) Conectar o processador a periféricos com maior eficiência e escalabilidade</li>
+            <li class="alternativa">c) Reduzir a quantidade de memória cache necessária</li>
+            <li class="alternativa">d) Eliminar a necessidade de interrupções</li>
+            <li class="alternativa">e) Gerenciar exclusivamente o sistema operacional</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">20. A principal função da unidade de controle dentro da CPU é:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Realizar operações aritméticas e lógicas</li>
+            <li class="alternativa">b) Armazenar temporariamente instruções em execução</li>
+            <li class="alternativa correta">c) Coordenar o fluxo de operações, decodificar instruções e direcionar sinais de controle</li>
+            <li class="alternativa">d) Gerenciar diretamente os dispositivos de armazenamento secundário</li>
+            <li class="alternativa">e) Executar programas aplicativos</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação - Monitores e Telas</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --highlight-bg: #fff3cd;
+            --highlight-text: #856404;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --answer-bg: #e8f4f8;
+            --answer-border: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .questao {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+        }
+
+        .enunciado {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+            font-size: 1.05em;
+        }
+
+        .alternativas {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 15px;
+        }
+
+        .alternativa {
+            padding: 8px 12px;
+            margin: 4px 0;
+            border-radius: 4px;
+        }
+
+        .correta {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            font-weight: bold;
+            border: 1px dashed var(--highlight-text);
+        }
+
+        .resposta-discursiva {
+            background-color: var(--answer-bg);
+            border-left: 4px solid var(--answer-border);
+            padding: 12px 15px;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+        
+        .label-resposta {
+            font-weight: bold;
+            font-style: normal;
+            color: var(--answer-border);
+            margin-right: 5px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .correta { background-color: yellow !important; -webkit-print-color-adjust: exact; }
+            .resposta-discursiva { background-color: #f0f0f0 !important; border-left: 4px solid #999; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🖥️ Avaliação – Monitores</h1>
+
+    <div class="questao">
+        <span class="enunciado">1. O monitor de computador é classificado como qual tipo de dispositivo?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) Dispositivo de entrada</li>
+            <li class="alternativa">B) Dispositivo de armazenamento</li>
+            <li class="alternativa correta">C) Dispositivo de saída</li>
+            <li class="alternativa">D) Dispositivo de processamento</li>
+            <li class="alternativa">E) Dispositivo de rede</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> O monitor exibe as informações processadas pelo computador.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">2. Qual tecnologia foi utilizada nos primeiros monitores de computador?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) LCD</li>
+            <li class="alternativa">B) LED</li>
+            <li class="alternativa">C) OLED</li>
+            <li class="alternativa correta">D) CRT</li>
+            <li class="alternativa">E) Plasma</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> Os primeiros monitores utilizavam tubo de raios catódicos (CRT).
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">3. O que significa a sigla CRT?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) Computer Response Technology</li>
+            <li class="alternativa correta">B) Cathode Ray Tube</li>
+            <li class="alternativa">C) Color Resolution Technology</li>
+            <li class="alternativa">D) Central Rendering Terminal</li>
+            <li class="alternativa">E) Computer Ray Technology</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> CRT significa Cathode Ray Tube (Tubo de Raios Catódicos).
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">4. Qual característica era comum nos monitores CRT?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) Eram finos e leves</li>
+            <li class="alternativa">B) Consumiam pouca energia</li>
+            <li class="alternativa correta">C) Eram grandes e pesados</li>
+            <li class="alternativa">D) Não utilizavam eletricidade</li>
+            <li class="alternativa">E) Eram flexíveis</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> Os monitores CRT eram volumosos e pesados devido ao tubo de vidro a vácuo interno.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">5. Qual tecnologia substituiu gradualmente os monitores CRT?</span>
+        <ul class="alternativas">
+            <li class="alternativa correta">A) LCD</li>
+            <li class="alternativa">B) Plasma</li>
+            <li class="alternativa">C) OLED</li>
+            <li class="alternativa">D) Laser</li>
+            <li class="alternativa">E) VGA</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> Os monitores LCD começaram a substituir os CRT de forma acelerada nos anos 2000.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">6. O que significa a sigla LCD?</span>
+        <ul class="alternativas">
+            <li class="alternativa correta">A) Liquid Crystal Display</li>
+            <li class="alternativa">B) Light Control Device</li>
+            <li class="alternativa">C) Linear Computer Display</li>
+            <li class="alternativa">D) Liquid Computer Driver</li>
+            <li class="alternativa">E) Light Crystal Device</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> LCD significa Liquid Crystal Display (Tela de Cristal Líquido).
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">7. Qual das alternativas é uma vantagem dos monitores LCD em relação aos CRT?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) Maior peso</li>
+            <li class="alternativa">B) Maior consumo de energia</li>
+            <li class="alternativa correta">C) Tela mais fina</li>
+            <li class="alternativa">D) Mais calor</li>
+            <li class="alternativa">E) Menor qualidade de imagem</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> Os monitores LCD são muito mais finos, leves e consomem menos energia que os CRT.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">8. Os monitores LED são considerados:</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) Uma tecnologia totalmente diferente do LCD</li>
+            <li class="alternativa correta">B) Uma evolução do LCD</li>
+            <li class="alternativa">C) Uma substituição da CPU</li>
+            <li class="alternativa">D) Um dispositivo de entrada</li>
+            <li class="alternativa">E) Um tipo de impressora</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> Os monitores LED são essencialmente monitores LCD, mas utilizam diodos emissores de luz (LEDs) para a retroiluminação em vez de lâmpadas fluorescentes (CCFL).
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">9. Qual tecnologia de monitor permite que cada pixel emita sua própria luz?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) CRT</li>
+            <li class="alternativa">B) LCD</li>
+            <li class="alternativa">C) LED</li>
+            <li class="alternativa correta">D) OLED</li>
+            <li class="alternativa">E) VGA</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> Nos monitores OLED (Organic Light-Emitting Diode), cada pixel emite luz individualmente, permitindo pretos absolutos e contraste infinito.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">10. Qual destas resoluções é considerada Full HD?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) 800 × 600</li>
+            <li class="alternativa">B) 1024 × 768</li>
+            <li class="alternativa">C) 1280 × 720</li>
+            <li class="alternativa correta">D) 1920 × 1080</li>
+            <li class="alternativa">E) 3840 × 2160</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> A resolução Full HD corresponde a 1920 pixels na horizontal por 1080 pixels na vertical (1080p).
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">11. A resolução de um monitor representa:</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) A quantidade de energia consumida</li>
+            <li class="alternativa">B) O tamanho físico da tela</li>
+            <li class="alternativa correta">C) A quantidade de pixels exibidos na tela</li>
+            <li class="alternativa">D) A velocidade do processador</li>
+            <li class="alternativa">E) A memória do computador</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> A resolução indica o número de pixels (pontos de luz) que formam a imagem na tela, definindo sua nitidez.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">12. Qual das opções representa uma resolução 4K?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) 1920 × 1080</li>
+            <li class="alternativa">B) 2560 × 1440</li>
+            <li class="alternativa correta">C) 3840 × 2160</li>
+            <li class="alternativa">D) 800 × 600</li>
+            <li class="alternativa">E) 1280 × 720</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> A resolução 4K UHD padrão para monitores e TVs é de 3840 × 2160 pixels.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">13. Qual é a função principal do monitor?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) Processar dados</li>
+            <li class="alternativa">B) Armazenar arquivos</li>
+            <li class="alternativa correta">C) Exibir informações visuais</li>
+            <li class="alternativa">D) Controlar o sistema operacional</li>
+            <li class="alternativa">E) Conectar dispositivos de rede</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> O monitor é o dispositivo de saída primário encarregado de apresentar visualmente os dados processados pela placa de vídeo.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">14. A taxa de atualização de um monitor é medida em:</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) Volts</li>
+            <li class="alternativa correta">B) Hertz</li>
+            <li class="alternativa">C) Bytes</li>
+            <li class="alternativa">D) Pixels</li>
+            <li class="alternativa">E) Watts</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> A taxa de atualização, que indica quantas vezes a imagem é redesenhada por segundo, é medida em Hertz (Hz).
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">15. Monitores com taxa de atualização alta (144Hz ou mais) são mais utilizados em:</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) Servidores</li>
+            <li class="alternativa">B) Impressoras</li>
+            <li class="alternativa correta">C) Jogos eletrônicos</li>
+            <li class="alternativa">D) Redes de computadores</li>
+            <li class="alternativa">E) Sistemas operacionais</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> Jogadores (gamers) preferem monitores com altas taxas de atualização para obter imagens mais fluidas e menor tempo de resposta em jogos competitivos.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">16. Qual tecnologia permite monitores com telas curvas?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) CRT</li>
+            <li class="alternativa correta">B) LED / LCD moderno</li>
+            <li class="alternativa">C) Impressoras térmicas</li>
+            <li class="alternativa">D) Discos rígidos</li>
+            <li class="alternativa">E) Memória RAM</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> Os painéis modernos de LCD/LED (e especialmente OLED) são finos e maleáveis o suficiente para serem fabricados com curvatura.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">17. Qual destas opções não é uma tecnologia de monitor?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) CRT</li>
+            <li class="alternativa">B) LCD</li>
+            <li class="alternativa">C) LED</li>
+            <li class="alternativa">D) OLED</li>
+            <li class="alternativa correta">E) SSD</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> SSD (Solid State Drive) é um dispositivo de armazenamento de dados, não de exibição de imagem.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">18. O tamanho de um monitor é medido em:</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) Bytes</li>
+            <li class="alternativa">B) Hertz</li>
+            <li class="alternativa correta">C) Polegadas</li>
+            <li class="alternativa">D) Megabytes</li>
+            <li class="alternativa">E) Watts</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> O tamanho da tela é aferido medindo-se a distância diagonal de um canto ao outro oposto, e o padrão global para isso são as polegadas (").
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">19. Os primeiros monitores monocromáticos geralmente exibiam qual cor?</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) Azul</li>
+            <li class="alternativa correta">B) Verde ou âmbar</li>
+            <li class="alternativa">C) Vermelho</li>
+            <li class="alternativa">D) Branco</li>
+            <li class="alternativa">E) Roxo</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> Devido ao tipo de fósforo utilizado nos tubos de raios catódicos da época, os monitores antigos exibiam texto tipicamente nas cores verde ou âmbar sobre um fundo preto.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">20. Os monitores atuais podem ter resoluções como:</span>
+        <ul class="alternativas">
+            <li class="alternativa">A) 720p apenas</li>
+            <li class="alternativa">B) 1080p apenas</li>
+            <li class="alternativa correta">C) 4K e 8K</li>
+            <li class="alternativa">D) Apenas 640 × 480</li>
+            <li class="alternativa">E) Somente 800 × 600</li>
+        </ul>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Justificativa:</span> A tecnologia avançou consideravelmente, permitindo que monitores modernos para uso profissional e entretenimento atinjam resoluções altíssimas como 4K e até 8K.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

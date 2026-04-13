@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação - Computadores Analógicos</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --highlight-bg: #fff3cd;
+            --highlight-text: #856404;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --answer-bg: #e8f4f8;
+            --answer-border: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+
+        .questao {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+        }
+
+        .enunciado {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .alternativas {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .alternativa {
+            padding: 5px 10px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+
+        .correta {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            font-weight: bold;
+            border: 1px dashed var(--highlight-text);
+        }
+
+        /* Estilo para as respostas discursivas */
+        .resposta-discursiva {
+            background-color: var(--answer-bg);
+            border-left: 4px solid var(--answer-border);
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+        }
+        
+        .label-resposta {
+            font-weight: bold;
+            font-style: normal;
+            color: var(--answer-border);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .correta { background-color: yellow !important; -webkit-print-color-adjust: exact; }
+            .resposta-discursiva { background-color: #f0f0f0 !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📘 Avaliação – Computadores Analógicos</h1>
+
+    <h2>🟢 Parte I – Questões Objetivas (1–10)</h2>
+
+    <div class="questao">
+        <span class="enunciado">1. Computadores analógicos operam com:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Sinais binários</li>
+            <li class="alternativa correta">b) Valores contínuos representados por grandezas físicas</li>
+            <li class="alternativa">c) Processamento em nuvem</li>
+            <li class="alternativa">d) Memória cache</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">2. Um exemplo de grandeza usada em computadores analógicos é:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Bits</li>
+            <li class="alternativa">b) Bytes</li>
+            <li class="alternativa correta">c) Tensão elétrica</li>
+            <li class="alternativa">d) Arquivos digitais</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">3. A régua de cálculo baseia-se nos estudos de:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) John von Neumann</li>
+            <li class="alternativa">b) Alan Turing</li>
+            <li class="alternativa correta">c) John Napier</li>
+            <li class="alternativa">d) Charles Babbage</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">4. O Analisador Diferencial foi desenvolvido por:</span>
+        <ul class="alternativas">
+            <li class="alternativa correta">a) Vannevar Bush</li>
+            <li class="alternativa">b) Howard Aiken</li>
+            <li class="alternativa">c) Grace Hopper</li>
+            <li class="alternativa">d) Ada Lovelace</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">5. O principal uso militar dos computadores analógicos ocorreu durante:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Guerra Fria</li>
+            <li class="alternativa">b) Primeira Guerra Mundial</li>
+            <li class="alternativa correta">c) Segunda Guerra Mundial</li>
+            <li class="alternativa">d) Guerra do Golfo</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">6. Uma vantagem dos computadores analógicos era:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Alta precisão numérica</li>
+            <li class="alternativa">b) Baixo consumo de energia</li>
+            <li class="alternativa correta">c) Rapidez para cálculos específicos em tempo real</li>
+            <li class="alternativa">d) Armazenamento massivo de dados</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">7. Uma limitação importante dos computadores analógicos é:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Funcionarem com eletricidade</li>
+            <li class="alternativa correta">b) Baixa precisão e sensibilidade a ruídos</li>
+            <li class="alternativa">c) Uso de software complexo</li>
+            <li class="alternativa">d) Necessidade de internet</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">8. Nos computadores analógicos eletrônicos, utilizavam-se:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Transistores binários exclusivamente</li>
+            <li class="alternativa correta">b) Amplificadores operacionais</li>
+            <li class="alternativa">c) SSDs</li>
+            <li class="alternativa">d) GPUs</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">9. Diferentemente dos computadores digitais, os analógicos:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Utilizam apenas 0 e 1</li>
+            <li class="alternativa correta">b) Representam valores por variações físicas contínuas</li>
+            <li class="alternativa">c) Executam sistemas operacionais</li>
+            <li class="alternativa">d) Armazenam dados em HD</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">10. O declínio dos computadores analógicos ocorreu principalmente devido:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) À invenção da internet</li>
+            <li class="alternativa correta">b) Ao surgimento dos computadores digitais</li>
+            <li class="alternativa">c) À falta de eletricidade</li>
+            <li class="alternativa">d) Ao excesso de memória</li>
+        </ul>
+    </div>
+
+    <h2>🟡 Parte II – Questões Discursivas (11–15)</h2>
+
+    <div class="questao">
+        <span class="enunciado">11. Explique o princípio de funcionamento de um computador analógico.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            O computador analógico modela problemas matemáticos utilizando grandezas físicas contínuas, como tensão elétrica, pressão hidráulica ou rotação mecânica. Em vez de usar estados discretos (0 e 1), as variáveis do problema são representadas por variações contínuas dessas grandezas. Por exemplo, uma tensão de 2,5V pode representar uma velocidade de 250 km/h, e os circuitos manipulam essas tensões para simular o comportamento do sistema real.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">12. Descreva o que era o Analisador Diferencial e sua importância histórica.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Desenvolvido por Vannevar Bush na década de 1920, o Analisador Diferencial era um computador analógico mecânico projetado especificamente para resolver equações diferenciais por meio de integração. Ele utilizava um complexo sistema de discos e engrenagens. Sua importância histórica reside no fato de ter sido uma das primeiras máquinas capazes de resolver problemas práticos e complexos de engenharia e física muito antes do advento dos computadores eletrônicos digitais.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">13. Compare a representação de dados em computadores analógicos e digitais.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Computadores analógicos representam dados como valores contínuos (um sinal elétrico que pode assumir infinitos valores dentro de um intervalo, análogo a um termômetro de mercúrio). Já os computadores digitais operam de forma discreta e quantizada, representando dados em um sistema binário (estados absolutos de 0 ou 1). Isso torna o sistema digital imune a pequenas variações de tensão, garantindo exatidão, enquanto o analógico é suscetível a imprecisões no meio físico.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">14. Por que os computadores analógicos eram úteis em aplicações militares?</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Eles eram fundamentais para cálculos em tempo real que lidavam com variáveis contínuas, como sistemas de controle de tiro para artilharia e miras de bombardeio durante a Segunda Guerra Mundial. Como as entradas (velocidade do vento, ângulo do alvo, velocidade do veículo) mudavam continuamente, o computador analógico podia integrar essas variações físicas instantaneamente e ajustar a mira em tempo real sem o "delay" do processamento numérico discreto da época.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">15. Quais fatores levaram ao declínio dos computadores analógicos?</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            O declínio deveu-se à falta de flexibilidade (era necessário reconfigurar o hardware fisicamente para mudar o "programa"), à baixa precisão devido a ruídos elétricos ou desgaste mecânico e à impossibilidade de armazenar grandes volumes de dados. A rápida evolução dos computadores digitais — que ofereciam precisão absoluta, armazenamento, e a flexibilidade do software programável — tornou as máquinas analógicas obsoletas para uso geral.
+        </div>
+    </div>
+
+    <h2>🔵 Parte III – Questões Aplicadas e Reflexivas (16–20)</h2>
+
+    <div class="questao">
+        <span class="enunciado">16. Compare computadores mecânicos e analógicos quanto ao princípio de funcionamento.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A distinção principal está na natureza do dado. Computadores mecânicos clássicos (como a máquina de Pascal) eram frequentemente "digitais" em sua lógica, pois suas engrenagens possuíam posições discretas (dentes representando os números 0 a 9). Já um computador analógico (mesmo que construído mecanicamente, como o Analisador Diferencial) opera de forma contínua, utilizando a rotação suave e ininterrupta de eixos para representar valores fracionários infinitos, sem estados discretos fixos.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">17. Analise como ruídos elétricos podem afetar a precisão de um computador analógico.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Como a informação em um computador analógico eletrônico é o próprio nível de tensão, qualquer interferência externa (ruído eletromagnético, variação de temperatura ou degradação de componentes) altera o valor da tensão. Se 5,00V representa o número 5, um ruído que eleve a tensão para 5,05V corrompe o cálculo diretamente, gerando um erro propagável. No digital, o sinal precisa sofrer uma alteração drástica para que um "0" seja confundido com um "1", garantindo a integridade dos dados.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">18. Explique por que computadores analógicos eram eficientes para resolver equações diferenciais.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Equações diferenciais descrevem sistemas dinâmicos contínuos. Em vez de realizar cálculos iterativos complexos (aproximações numéricas) como faz um processador digital, o computador analógico utiliza componentes como amplificadores operacionais configurados como integradores. O circuito elétrico literalmente se comporta de acordo com a equação. A integração matemática acontece instantaneamente pela carga e descarga contínua de capacitores, permitindo a simulação em tempo real.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">19. Relacione o avanço da computação digital com o modelo de John von Neumann.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A arquitetura de von Neumann introduziu o conceito de programa armazenado em memória junto com os dados. Em computadores analógicos e nos primeiros digitais, a "programação" era feita alterando cabos e chaves físicas. O modelo de von Neumann separou o hardware do software, permitindo que a mesma máquina digital de propósito geral pudesse ser reprogramada instantaneamente apenas lendo novas instruções de memória, superando a rigidez estrutural dos computadores analógicos.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">20. Avalie a relevância dos conceitos analógicos nos sistemas modernos de controle industrial.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Embora o processamento hoje seja digital, o mundo real continua sendo analógico. Sistemas modernos de controle industrial (automação, robótica, IoT) dependem criticamente de sensores e atuadores analógicos para medir e interagir com grandezas como temperatura, pressão e fluxo. O conhecimento de sistemas contínuos e teoria de controle (como controladores PID) tem raízes diretas na computação analógica, sendo essencial para converter, filtrar e estabilizar sinais antes que eles sejam convertidos para o domínio digital por Conversores A/D.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

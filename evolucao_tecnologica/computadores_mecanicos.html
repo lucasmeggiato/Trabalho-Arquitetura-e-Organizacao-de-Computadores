@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação - Computadores Mecânicos</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --highlight-bg: #fff3cd;
+            --highlight-text: #856404;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --answer-bg: #e8f4f8;
+            --answer-border: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+
+        .questao {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+        }
+
+        .enunciado {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .alternativas {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .alternativa {
+            padding: 5px 10px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+
+        .correta {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            font-weight: bold;
+            border: 1px dashed var(--highlight-text);
+        }
+
+        /* Estilo para as respostas discursivas */
+        .resposta-discursiva {
+            background-color: var(--answer-bg);
+            border-left: 4px solid var(--answer-border);
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+        }
+        
+        .label-resposta {
+            font-weight: bold;
+            font-style: normal;
+            color: var(--answer-border);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .correta { background-color: yellow !important; -webkit-print-color-adjust: exact; }
+            .resposta-discursiva { background-color: #f0f0f0 !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📘 Avaliação – Computadores Mecânicos</h1>
+
+    <h2>🟢 Parte I – Questões Objetivas (1–10)</h2>
+
+    <div class="questao">
+        <span class="enunciado">1. Os computadores mecânicos utilizavam principalmente:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Circuitos eletrônicos</li>
+            <li class="alternativa correta">b) Engrenagens e mecanismos físicos</li>
+            <li class="alternativa">c) Transistores</li>
+            <li class="alternativa">d) Chips de silício</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">2. A Pascalina foi criada por:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Charles Babbage</li>
+            <li class="alternativa">b) Ada Lovelace</li>
+            <li class="alternativa correta">c) Blaise Pascal</li>
+            <li class="alternativa">d) John von Neumann</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">3. A Pascalina realizava principalmente:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Multiplicação e divisão</li>
+            <li class="alternativa correta">b) Soma e subtração</li>
+            <li class="alternativa">c) Cálculo diferencial</li>
+            <li class="alternativa">d) Processamento binário</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">4. A Máquina de Leibniz introduziu qual avanço?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Uso de válvulas</li>
+            <li class="alternativa correta">b) Roda escalonada</li>
+            <li class="alternativa">c) Cartões perfurados</li>
+            <li class="alternativa">d) Transistores</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">5. A Máquina Diferencial foi projetada por:</span>
+        <ul class="alternativas">
+            <li class="alternativa correta">a) Charles Babbage</li>
+            <li class="alternativa">b) Howard Aiken</li>
+            <li class="alternativa">c) Alan Turing</li>
+            <li class="alternativa">d) Grace Hopper</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">6. O principal objetivo da Máquina Diferencial era:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Criar jogos</li>
+            <li class="alternativa correta">b) Calcular tabelas matemáticas automaticamente</li>
+            <li class="alternativa">c) Navegar na internet</li>
+            <li class="alternativa">d) Realizar criptografia</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">7. A Máquina Analítica é considerada revolucionária porque:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Foi totalmente construída</li>
+            <li class="alternativa correta">b) Introduziu conceitos semelhantes aos computadores modernos</li>
+            <li class="alternativa">c) Usava internet</li>
+            <li class="alternativa">d) Funcionava com energia nuclear</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">8. A primeira programadora da história foi:</span>
+        <ul class="alternativas">
+            <li class="alternativa correta">a) Ada Lovelace</li>
+            <li class="alternativa">b) Grace Hopper</li>
+            <li class="alternativa">c) Marie Curie</li>
+            <li class="alternativa">d) Margaret Hamilton</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">9. Os computadores mecânicos não utilizavam:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Engrenagens</li>
+            <li class="alternativa">b) Movimento físico</li>
+            <li class="alternativa correta">c) Eletricidade</li>
+            <li class="alternativa">d) Cálculos matemáticos</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">10. A principal limitação dos computadores mecânicos era:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Alta velocidade</li>
+            <li class="alternativa">b) Baixo consumo de energia</li>
+            <li class="alternativa correta">c) Lentidão e complexidade mecânica</li>
+            <li class="alternativa">d) Conectividade em rede</li>
+        </ul>
+    </div>
+
+    <h2>🟡 Parte II – Questões Discursivas (11–15)</h2>
+
+    <div class="questao">
+        <span class="enunciado">11. Explique como funcionava a Pascalina.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A Pascalina, inventada por Blaise Pascal em 1642, funcionava através de um sistema interligado de engrenagens e rodas dentadas. Cada roda representava um dígito (unidades, dezenas, centenas). Seu principal mecanismo era o transporte automático (o "vai-um"): quando uma roda completava uma rotação (passando do 9 para o 0), um dente especial engatava e girava a engrenagem adjacente à esquerda um passo adiante, realizando a soma mecânica. Ela foi projetada essencialmente para operações de soma e subtração.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">12. Descreva as principais diferenças entre a Máquina Diferencial e a Máquina Analítica.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A Máquina Diferencial era um dispositivo de propósito específico, projetado para tabular funções polinomiais usando o método das diferenças finitas, ou seja, ela só executava um tipo fixo de cálculo. Já a Máquina Analítica era um projeto de um computador de propósito geral. Ela possuía uma unidade de processamento (o "moinho"), memória (o "armazém") e era programável através de cartões perfurados, o que permitia que ela executasse qualquer sequência de operações matemáticas, incluindo loops (laços de repetição) e desvios condicionais.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">13. Por que a Máquina Analítica é considerada precursora dos computadores modernos?</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Porque, embora puramente mecânica e movida a vapor, ela continha a arquitetura lógica fundamental de qualquer processador moderno. O projeto de Charles Babbage separava fisicamente o "Store" (a memória onde os dados ficavam guardados) do "Mill" (a ULA/CPU, onde a aritmética era processada). Além disso, contava com mecanismos de entrada e saída (cartões perfurados e uma impressora). Essa separação lógica entre dados e processamento é a base da computação até hoje.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">14. Explique a importância de Ada Lovelace para a história da computação.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Ada Lovelace foi a primeira pessoa a compreender que a Máquina Analítica não era apenas uma calculadora de números, mas uma máquina capaz de manipular quaisquer símbolos sujeitos a regras lógicas (como notas musicais ou letras). Ela escreveu o primeiro algoritmo formal da história concebido para ser processado por uma máquina (para calcular os Números de Bernoulli), o que a consagra como a primeira programadora e uma visionária do potencial geral da computação lógica.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">15. Quais eram as principais limitações dos computadores mecânicos?</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            As maiores limitações eram físicas: atrito, desgaste de materiais, tamanho colossal, peso e lentidão de operação. O projeto da Máquina Analítica exigia milhares de engrenagens de latão e aço. A metalurgia e a usinagem do século XIX não possuíam a precisão micrométrica necessária para fabricar peças idênticas que não travassem umas nas outras. O atrito acumulado entre milhares de engrenagens exigiria uma força motriz imensa (como um motor a vapor), tornando a máquina inviável de ser construída e operada eficientemente na época.
+        </div>
+    </div>
+
+    <h2>🔵 Parte III – Questões Aplicadas e Reflexivas (16–20)</h2>
+
+    <div class="questao">
+        <span class="enunciado">16. Compare computadores mecânicos e computadores eletrônicos quanto à eficiência e escalabilidade.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Computadores mecânicos têm uma escalabilidade severamente limitada pela física clássica (massa, inércia e atrito). Adicionar mais poder de processamento significava adicionar toneladas de metal, o que diminuía a velocidade. Computadores eletrônicos operam baseados no fluxo de elétrons em materiais semicondutores. Por não terem partes móveis físicas, eles não sofrem de inércia ou atrito mecânico, permitindo que os transistores sejam miniaturizados em escala nanométrica e operem bilhões de vezes por segundo de forma altamente eficiente.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">17. Analise como a falta de eletricidade limitava o desempenho dessas máquinas.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Sem eletricidade, o transporte da "informação" (o vai-um, ou a mudança de estado de uma variável) dependia do movimento físico de engrenagens maciças. A velocidade máxima do sistema era ditada pela velocidade com que essas peças metálicas podiam girar sem se quebrar ou travar devido ao esforço mecânico (limitada, na prática, ao torque de uma manivela manual ou motor a vapor). A eletricidade permitiu que os dados viajassem quase à velocidade da luz, desvinculando a lógica computacional do movimento cinético de massas pesadas.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">18. Relacione os conceitos da Máquina Analítica com a arquitetura moderna proposta por John von Neumann.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Ambas as arquiteturas compartilham o design modular. O "Store" de Babbage equivale à Memória Principal de von Neumann, o "Mill" equivale à Unidade Lógica e Aritmética (ALU), e o uso de cartões perfurados equivale aos periféricos de Entrada e Saída. A principal diferença é que Babbage inseria as instruções fisicamente de fora (nos cartões), enquanto a Arquitetura de von Neumann (criada um século depois) introduziu o conceito de manter o programa (as instruções) e os dados armazenados eletronicamente no mesmo espaço de memória, revolucionando a velocidade de execução.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">19. Explique como os cartões perfurados influenciaram o desenvolvimento posterior da computação.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Originários dos teares mecânicos de Joseph Marie Jacquard para criar padrões em tecidos, os cartões perfurados provaram que a informação (instruções de operação e dados numéricos) poderia ser codificada em um estado binário: "furo" ou "sem furo". Esse conceito não só foi usado por Babbage, mas mais tarde por Herman Hollerith para o censo dos EUA (dando origem à IBM). Os cartões perfurados continuaram sendo a principal interface física de programação e armazenamento de dados até a popularização dos teclados e fitas magnéticas nos anos 1970.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">20. Avalie a importância histórica dos computadores mecânicos para a evolução da ciência da computação.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A importância reside na prova de conceito (Proof of Concept). Eles demonstraram, no campo da teoria lógica e da engenharia matemática, que o trabalho intelectual de calcular e decidir não dependia exclusivamente do cérebro humano, mas podia ser delegado a uma máquina se houvesse uma arquitetura estruturada em algoritmos. Eles fundaram as bases teóricas de componentes centrais da computação (hardware modular, laços lógicos, variáveis e programação), preparando o terreno lógico para quando a tecnologia eletrônica permitisse implementá-los na prática no século XX.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

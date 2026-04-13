@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação - Arquitetura Harvard</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --highlight-bg: #fff3cd;
+            --highlight-text: #856404;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --answer-bg: #e8f4f8;
+            --answer-border: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+            font-size: 22px;
+        }
+
+        .questao {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+        }
+
+        .enunciado {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .alternativas {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .alternativa {
+            padding: 5px 10px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+
+        .correta {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            font-weight: bold;
+            border: 1px dashed var(--highlight-text);
+        }
+
+        .resposta-discursiva {
+            background-color: var(--answer-bg);
+            border-left: 4px solid var(--answer-border);
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+        }
+        
+        .label-resposta {
+            font-weight: bold;
+            font-style: normal;
+            color: var(--answer-border);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .correta { background-color: yellow !important; -webkit-print-color-adjust: exact; }
+            .resposta-discursiva { background-color: #f0f0f0 !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📘 Avaliação – Arquitetura Harvard</h1>
+
+    <h2>🟢 Parte I – Questões Objetivas (1–10)</h2>
+
+    <div class="questao">
+        <span class="enunciado">1. A principal característica da Arquitetura Harvard é:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Uso de múltiplos processadores</li>
+            <li class="alternativa correta">b) Separação entre memória de dados e memória de instruções</li>
+            <li class="alternativa">c) Uso exclusivo de memória cache</li>
+            <li class="alternativa">d) Execução paralela obrigatória</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">2. O nome da arquitetura Harvard tem origem no computador:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) ENIAC</li>
+            <li class="alternativa">b) EDVAC</li>
+            <li class="alternativa correta">c) Harvard Mark I</li>
+            <li class="alternativa">d) IBM PC</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">3. O Harvard Mark I foi desenvolvido sob liderança de:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) John von Neumann</li>
+            <li class="alternativa">b) Alan Turing</li>
+            <li class="alternativa correta">c) Howard Aiken</li>
+            <li class="alternativa">d) Bill Gates</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">4. Na Arquitetura Harvard existem:</span>
+        <ul class="alternativas">
+            <li class="alternativa correta">a) Dois barramentos separados</li>
+            <li class="alternativa">b) Um único barramento</li>
+            <li class="alternativa">c) Nenhum barramento</li>
+            <li class="alternativa">d) Apenas barramento de dados</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">5. Uma vantagem da separação de memórias é:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Redução da RAM</li>
+            <li class="alternativa correta">b) Execução simultânea de busca de instruções e leitura de dados</li>
+            <li class="alternativa">c) Eliminação da CPU</li>
+            <li class="alternativa">d) Ausência de cache</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">6. A Arquitetura Harvard reduz qual problema clássico?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Fragmentação de disco</li>
+            <li class="alternativa correta">b) Gargalo de Von Neumann</li>
+            <li class="alternativa">c) Overclock</li>
+            <li class="alternativa">d) Latência de rede</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">7. A Arquitetura Harvard é muito comum em:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Mainframes antigos</li>
+            <li class="alternativa correta">b) Microcontroladores</li>
+            <li class="alternativa">c) Discos rígidos</li>
+            <li class="alternativa">d) Impressoras</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">8. Em termos de segurança, a separação de memória:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Facilita a execução de código malicioso</li>
+            <li class="alternativa">b) Impede totalmente ataques</li>
+            <li class="alternativa correta">c) Dificulta injeção de código</li>
+            <li class="alternativa">d) Remove a necessidade de antivírus</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">9. A Arquitetura Harvard Modificada combina:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Memórias totalmente separadas</li>
+            <li class="alternativa">b) Apenas cache</li>
+            <li class="alternativa correta">c) Separação parcial com memória principal compartilhada</li>
+            <li class="alternativa">d) Dois sistemas operacionais</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">10. Processadores modernos geralmente utilizam:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Harvard pura</li>
+            <li class="alternativa">b) Von Neumann pura</li>
+            <li class="alternativa correta">c) Harvard Modificada</li>
+            <li class="alternativa">d) Arquitetura Analógica</li>
+        </ul>
+    </div>
+
+    <h2>🟡 Parte II – Questões Discursivas (11–15)</h2>
+
+    <div class="questao">
+        <span class="enunciado">11. Explique por que a separação entre dados e instruções pode aumentar o desempenho.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A separação física das memórias significa que existem vias de comunicação (barramentos) independentes. Isso permite concorrência no ciclo de processamento: a CPU pode buscar a próxima instrução a ser executada na memória de instruções (Fetch) exatamente no mesmo instante em que está lendo ou escrevendo um dado em uma variável na memória de dados, dobrando a largura de banda efetiva em comparação com um sistema de barramento único.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">12. Diferencie Arquitetura Harvard de Arquitetura de Von Neumann.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A Arquitetura de Von Neumann utiliza uma única memória física unificada e um único conjunto de barramentos para armazenar tanto o código do programa (instruções) quanto os dados que o programa manipula. A Arquitetura Harvard utiliza dois blocos físicos de memória distintos, com barramentos totalmente isolados para cada um: um exclusivo para o código e outro exclusivo para os dados.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">13. Descreva o papel dos barramentos na Arquitetura Harvard.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Os barramentos são as "rodovias" eletrônicas da placa. Na arquitetura Harvard, o papel deles é garantir tráfego isolado. Existem barramentos de endereço e de dados conectados apenas à Memória de Programa, e um conjunto idêntico conectado apenas à Memória de Dados. Esse design não apenas permite acessos simultâneos, mas também permite que o tamanho da "palavra" (bits) de uma instrução seja diferente do tamanho da palavra de um dado, otimizando o design do processador.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">14. Explique por que a Arquitetura Harvard é comum em sistemas embarcados.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Sistemas embarcados e microcontroladores (como os da família AVR usados no Arduino ou os microcontroladores PIC) executam funções altamente específicas e repetitivas, precisando de velocidade determinística e baixo custo. Eles gravam o programa de forma permanente em uma memória não volátil (Flash/ROM) e utilizam uma quantidade muito menor de RAM apenas para variáveis (dados) em tempo de execução. A arquitetura Harvard encaixa perfeitamente nesse modelo de uso fixo e otimizado.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">15. Defina o que é Arquitetura Harvard Modificada e onde ela é utilizada.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A Arquitetura Harvard Modificada tenta juntar o melhor dos dois mundos. O sistema possui uma única memória principal externa (RAM) que abriga tanto dados quanto instruções (padrão Von Neumann), conferindo flexibilidade para rodar múltiplos programas. No entanto, internamente, dentro do chip do processador, a memória Cache L1 é dividida em "Cache de Dados" e "Cache de Instruções", operando como uma arquitetura Harvard. É utilizada em praticamente todos os processadores de propósito geral modernos (Intel Core, AMD Ryzen, Apple Silicon, etc).
+        </div>
+    </div>
+
+    <h2>🔵 Parte III – Questões Aplicadas e Reflexivas (16–20)</h2>
+
+    <div class="questao">
+        <span class="enunciado">16. Analise como a Arquitetura Harvard pode contribuir para a segurança da informação.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Ela oferece uma barreira física contra vulnerabilidades como o "Buffer Overflow" clássico voltado à execução. Em arquiteturas unificadas, um atacante pode tentar escrever um código malicioso em uma variável (dado) e forçar a CPU a executá-lo. Na Harvard pura, a unidade de execução da CPU não tem ligação para buscar instruções na memória de dados. Aquilo que é interpretado como instrução vem estritamente da memória restrita de programa, impedindo a injeção acidental (ou maliciosa) de código em áreas de dados.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">17. Explique como microcontroladores industriais se beneficiam dessa arquitetura.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            No ambiente industrial, os equipamentos operam com Sistemas Operacionais de Tempo Real (RTOS), onde um atraso de milissegundos em uma esteira de produção ou braço robótico pode causar acidentes. A Arquitetura Harvard remove a contenção de acesso à memória. Assim, os ciclos de máquina da CPU são matematicamente previsíveis (determinísticos), garantindo que as operações de leitura de sensores e acionamento de motores ocorram no exato momento programado.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">18. Relacione a Arquitetura Harvard com aplicações em IoT.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Dispositivos IoT (Internet das Coisas) são geralmente compactos, de baixo custo e movidos a baterias limitadas, rodando através de microcontroladores que executam uma única função (ex: termostato inteligente). A arquitetura Harvard permite que esses chips executem mais operações por ciclo de clock devido aos barramentos separados, maximizando a eficiência energética (performance por watt). Além disso, a separação física da memória ajuda a mitigar ataques cibernéticos contra esses dispositivos que estão constantemente expostos à internet.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">19. Compare o impacto do gargalo na Arquitetura Harvard e na Arquitetura de John von Neumann.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            O "Gargalo de Von Neumann" surge porque a CPU, que processa dados incrivelmente rápido, precisa ficar ociosa esperando sua vez para buscar ou uma instrução ou um dado através do mesmo barramento congestionado. A Arquitetura Harvard mitiga primariamente esse problema de "engarrafamento de vias", pois oferece ruas paralelas (barramentos duplos). Na Harvard, o único gargalo restante é a própria velocidade natural (latência de leitura/escrita) do hardware de memória, e não a contenção de tráfego.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">20. Avalie se a Arquitetura Harvard pura ainda é viável em computadores pessoais modernos. Justifique.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A Arquitetura Harvard pura não é viável para computadores pessoais (PCs). PCs são máquinas de propósito geral que precisam carregar gigabytes de diferentes programas (jogos, navegadores, editores) do armazenamento secundário (SSD) para a memória em tempo real. Ter pentes de memória RAM fisicamente separados e imutáveis para código e para dados seria financeiramente ineficiente e limitaria a flexibilidade dos sistemas operacionais dinâmicos, que precisam realocar a memória constantemente conforme a necessidade do usuário. É por isso que adotamos a Harvard Modificada.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

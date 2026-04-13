@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação - Representação da Informação e Aritmética Computacional</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --highlight-bg: #fff3cd;
+            --highlight-text: #856404;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+            font-size: 22px;
+        }
+
+        .questao {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+        }
+
+        .enunciado {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .alternativas {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .alternativa {
+            padding: 5px 10px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+
+        .correta {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            font-weight: bold;
+            border: 1px dashed var(--highlight-text);
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .correta { background-color: yellow !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 Avaliação – Representação da Informação e Aritmética Computacional</h1>
+
+    <div class="questao">
+        <span class="enunciado">1. Qual é a menor unidade de informação em um computador?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Byte</li>
+            <li class="alternativa correta">b) Bit</li>
+            <li class="alternativa">c) Kilobyte</li>
+            <li class="alternativa">d) Palavra</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">2. Um byte é composto por:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) 2 bits</li>
+            <li class="alternativa">b) 4 bits</li>
+            <li class="alternativa correta">c) 8 bits</li>
+            <li class="alternativa">d) 16 bits</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">3. O sistema numérico utilizado internamente pelos computadores é o:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Decimal</li>
+            <li class="alternativa">b) Octal</li>
+            <li class="alternativa">c) Hexadecimal</li>
+            <li class="alternativa correta">d) Binário</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">4. O Sistema Binário utiliza quais dígitos?</span>
+        <ul class="alternativas">
+            <li class="alternativa correta">a) 0 e 1</li>
+            <li class="alternativa">b) 1 e 2</li>
+            <li class="alternativa">c) 0 a 9</li>
+            <li class="alternativa">d) A e B</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">5. Qual das alternativas representa 1 Kilobyte?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) 512 bytes</li>
+            <li class="alternativa">b) 1000 bytes</li>
+            <li class="alternativa correta">c) 1024 bytes</li>
+            <li class="alternativa">d) 2048 bytes</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">6. Qual padrão é utilizado para representar caracteres em computadores?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) TCP</li>
+            <li class="alternativa">b) HTTP</li>
+            <li class="alternativa correta">c) ASCII</li>
+            <li class="alternativa">d) SMTP</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">7. Qual componente do processador realiza operações matemáticas e lógicas?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) RAM</li>
+            <li class="alternativa correta">b) ALU</li>
+            <li class="alternativa">c) HD</li>
+            <li class="alternativa">d) GPU</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">8. Qual componente contém a ALU?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Memória RAM</li>
+            <li class="alternativa correta">b) Processador</li>
+            <li class="alternativa">c) Disco rígido</li>
+            <li class="alternativa">d) Placa de rede</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">9. Qual é o resultado da soma binária: 1 + 1</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) 1</li>
+            <li class="alternativa">b) 2</li>
+            <li class="alternativa correta">c) 10</li>
+            <li class="alternativa">d) 11</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">10. O número binário 1010 corresponde a qual valor decimal?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) 8</li>
+            <li class="alternativa">b) 9</li>
+            <li class="alternativa correta">c) 10</li>
+            <li class="alternativa">d) 12</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">11. Qual sistema numérico utiliza 16 símbolos?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Decimal</li>
+            <li class="alternativa">b) Binário</li>
+            <li class="alternativa correta">c) Hexadecimal</li>
+            <li class="alternativa">d) Octal</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">12. O número hexadecimal A corresponde a qual número decimal?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) 8</li>
+            <li class="alternativa">b) 9</li>
+            <li class="alternativa correta">c) 10</li>
+            <li class="alternativa">d) 12</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">13. A representação de números reais nos computadores geralmente segue o padrão:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) IEEE 700</li>
+            <li class="alternativa correta">b) IEEE 754</li>
+            <li class="alternativa">c) ISO 9000</li>
+            <li class="alternativa">d) UTF-8</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">14. Qual tipo de representação é usado para números com casas decimais?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Inteiro</li>
+            <li class="alternativa">b) Binário puro</li>
+            <li class="alternativa correta">c) Ponto flutuante</li>
+            <li class="alternativa">d) Octal</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">15. Qual sistema numérico utiliza base 10?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Binário</li>
+            <li class="alternativa correta">b) Decimal</li>
+            <li class="alternativa">c) Hexadecimal</li>
+            <li class="alternativa">d) Octal</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">16. A multiplicação e divisão em computadores são realizadas principalmente por:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Memória</li>
+            <li class="alternativa">b) Sistema operacional</li>
+            <li class="alternativa correta">c) Circuitos lógicos</li>
+            <li class="alternativa">d) Interface gráfica</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">17. Qual dos seguintes é um exemplo de unidade de armazenamento?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) CPU</li>
+            <li class="alternativa correta">b) Byte</li>
+            <li class="alternativa">c) Monitor</li>
+            <li class="alternativa">d) Mouse</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">18. Qual representação permite números positivos e negativos?</span>
+        <ul class="alternativas">
+            <li class="alternativa correta">a) Inteiros com sinal</li>
+            <li class="alternativa">b) Inteiros sem sinal</li>
+            <li class="alternativa">c) Binário simples</li>
+            <li class="alternativa">d) ASCII</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">19. Qual padrão de codificação suporta praticamente todos os idiomas do mundo?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) ASCII</li>
+            <li class="alternativa correta">b) Unicode</li>
+            <li class="alternativa">c) HTML</li>
+            <li class="alternativa">d) FTP</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">20. Qual é a principal função da representação da informação?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Criar programas</li>
+            <li class="alternativa correta">b) Armazenar dados em forma compreensível para o computador</li>
+            <li class="alternativa">c) Melhorar a internet</li>
+            <li class="alternativa">d) Aumentar a memória RAM</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

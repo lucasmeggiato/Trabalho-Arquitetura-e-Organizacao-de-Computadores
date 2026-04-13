@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação - Arquitetura de John von Neumann</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --highlight-bg: #fff3cd;
+            --highlight-text: #856404;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --answer-bg: #e8f4f8;
+            --answer-border: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+            font-size: 22px;
+        }
+
+        .questao {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+        }
+
+        .enunciado {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .alternativas {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .alternativa {
+            padding: 5px 10px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+
+        .correta {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            font-weight: bold;
+            border: 1px dashed var(--highlight-text);
+        }
+
+        .resposta-discursiva {
+            background-color: var(--answer-bg);
+            border-left: 4px solid var(--answer-border);
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+        }
+        
+        .label-resposta {
+            font-weight: bold;
+            font-style: normal;
+            color: var(--answer-border);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .correta { background-color: yellow !important; -webkit-print-color-adjust: exact; }
+            .resposta-discursiva { background-color: #f0f0f0 !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📘 Avaliação – Arquitetura de John von Neumann</h1>
+
+    <h2>🟢 Parte I – Questões Objetivas (1–10)</h2>
+
+    <div class="questao">
+        <span class="enunciado">1. Antes do conceito de programa armazenado, os computadores eram programados:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Por meio de sistemas operacionais</li>
+            <li class="alternativa correta">b) Alterando conexões físicas e chaves</li>
+            <li class="alternativa">c) Utilizando memória RAM</li>
+            <li class="alternativa">d) Por meio de compiladores</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">2. O principal diferencial da Arquitetura de Von Neumann é:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Uso de múltiplas CPUs</li>
+            <li class="alternativa">b) Separação entre dados e instruções</li>
+            <li class="alternativa correta">c) Armazenamento conjunto de dados e instruções na mesma memória</li>
+            <li class="alternativa">d) Processamento paralelo</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">3. A ULA (Unidade Lógica e Aritmética) é responsável por:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Armazenar programas</li>
+            <li class="alternativa correta">b) Executar cálculos e operações lógicas</li>
+            <li class="alternativa">c) Controlar periféricos</li>
+            <li class="alternativa">d) Gerenciar memória secundária</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">4. A Unidade de Controle (UC) tem como função principal:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Executar cálculos matemáticos</li>
+            <li class="alternativa">b) Armazenar dados permanentemente</li>
+            <li class="alternativa correta">c) Interpretar instruções e coordenar a execução</li>
+            <li class="alternativa">d) Gerenciar dispositivos USB</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">5. Os registradores são:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Memórias externas</li>
+            <li class="alternativa correta">b) Pequenas memórias ultrarrápidas dentro da CPU</li>
+            <li class="alternativa">c) Discos rígidos</li>
+            <li class="alternativa">d) Sistemas de backup</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">6. A memória principal (RAM) armazena:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Apenas dados</li>
+            <li class="alternativa">b) Apenas instruções</li>
+            <li class="alternativa correta">c) Dados e instruções</li>
+            <li class="alternativa">d) Apenas arquivos do sistema</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">7. O barramento de dados é responsável por:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Transportar sinais elétricos exclusivamente da fonte</li>
+            <li class="alternativa correta">b) Levar dados entre CPU, memória e I/O</li>
+            <li class="alternativa">c) Armazenar informações temporárias</li>
+            <li class="alternativa">d) Proteger contra vírus</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">8. O Gargalo de Von Neumann ocorre devido:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Ao excesso de registradores</li>
+            <li class="alternativa correta">b) À separação física entre CPU e memória (e uso de barramento compartilhado)</li>
+            <li class="alternativa">c) À falta de sistemas operacionais</li>
+            <li class="alternativa">d) Ao uso de discos rígidos</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">9. A memória cache foi criada para:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Substituir a RAM</li>
+            <li class="alternativa">b) Armazenar dados permanentemente</li>
+            <li class="alternativa correta">c) Reduzir o impacto do gargalo entre CPU e memória</li>
+            <li class="alternativa">d) Aumentar o tamanho do HD</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">10. Um ataque que explora o fato de dados e instruções estarem na mesma memória pode:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Melhorar o desempenho</li>
+            <li class="alternativa correta">b) Executar código malicioso</li>
+            <li class="alternativa">c) Aumentar a RAM</li>
+            <li class="alternativa">d) Criar novos registradores</li>
+        </ul>
+    </div>
+
+    <h2>🟡 Parte II – Questões Discursivas (11–15)</h2>
+
+    <div class="questao">
+        <span class="enunciado">11. Explique o conceito de Programa Armazenado e sua importância histórica.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            O conceito de Programa Armazenado determina que as instruções que o computador deve executar (o software) sejam armazenadas eletronicamente na mesma memória de leitura/escrita que os dados. Historicamente, isso revolucionou a computação, pois eliminou a necessidade de reconfigurar cabos ou painéis físicos para mudar a tarefa da máquina. O hardware tornou-se universal, e a funcionalidade passou a ser definida puramente pelo software.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">12. Descreva os quatro componentes principais da Arquitetura de Von Neumann.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            1) <b>Unidade Central de Processamento (CPU):</b> composta pela ULA e Unidade de Controle, é o cérebro que processa os dados.<br>
+            2) <b>Memória Principal:</b> armazena temporariamente os dados e as instruções do programa em execução.<br>
+            3) <b>Dispositivos de Entrada:</b> permitem a inserção de dados externos no sistema (ex: teclado, mouse).<br>
+            4) <b>Dispositivos de Saída:</b> recebem os dados processados e os apresentam ao usuário (ex: monitor, impressora).
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">13. Diferencie a função da ULA e da Unidade de Controle.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A <b>Unidade Lógica e Aritmética (ULA)</b> é a "calculadora" do sistema, realizando o trabalho bruto: somas, subtrações e operações lógicas booleanas (AND, OR, NOT). Já a <b>Unidade de Controle (UC)</b> atua como o "maestro" do processador: ela busca as instruções na memória, decodifica o que deve ser feito e envia sinais elétricos instruindo a ULA e a memória sobre como agir para completar aquela instrução.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">14. Explique com suas palavras o que é o Gargalo de Von Neumann.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            É a limitação de desempenho que ocorre porque a CPU trabalha em velocidades altíssimas, mas a memória RAM é relativamente lenta e está separada fisicamente. Como ambos compartilham o mesmo barramento (via de comunicação) para buscar tanto instruções quanto dados, a CPU passa grande parte do seu tempo "ociosa", apenas esperando a informação trafegar da memória até ela para poder trabalhar.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">15. Por que a arquitetura original pode representar risco à segurança da informação?</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Porque a arquitetura não distingue fisicamente o que é um "dado" do que é uma "instrução" — ambos são apenas sequências de bits na mesma memória principal. Isso significa que, se um atacante conseguir inserir uma sequência de bits maliciosos em uma área destinada a dados de usuário, ele pode manipular a CPU para ler e executar essa sequência como se fosse um código legítimo do programa.
+        </div>
+    </div>
+
+    <h2>🔵 Parte III – Questões Aplicadas e Reflexivas (16–20)</h2>
+
+    <div class="questao">
+        <span class="enunciado">16. Explique como o conceito de cache melhora o desempenho de servidores Back-End.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            O conceito de cache no hardware (armazenar dados frequentemente acessados perto da CPU para evitar o gargalo da RAM) é aplicado em software no Back-End. Ferramentas como Redis ou Memcached armazenam em memória RAM ultrarrápida os resultados de consultas frequentes ao Banco de Dados (que fica no disco rígido e exige processamento pesado). Assim, a aplicação Back-End evita a "latência de busca" no disco, melhorando o tempo de resposta da API de forma análoga ao que a memória cache L1/L2 faz pela CPU.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">17. Relacione a Arquitetura de Von Neumann com a execução de um programa em Java.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Quando um código Java é executado, a Máquina Virtual Java (JVM) carrega tanto o programa (o <i>bytecode</i> compilado) quanto as variáveis do usuário para a Memória RAM. O processador, atuando sob os preceitos de Von Neumann, busca sequencialmente essas instruções do bytecode e os dados na RAM, processa na ULA e devolve o resultado para a mesma memória unificada.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">18. Descreva como um ataque de injeção de código pode explorar a arquitetura de programa armazenado.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            No ataque de <i>Buffer Overflow</i>, um software mal programado permite que dados externos (como um texto digitado em um formulário) ultrapassem o tamanho reservado na memória. Como dados e instruções dividem o mesmo espaço linear (característica de Von Neumann), o excesso de dados transborda e sobrescreve o endereço de retorno da função. Quando a CPU vai buscar a próxima instrução, ela é redirecionada para a área de memória do dado transbordado, executando o código injetado pelo hacker.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">19. Compare, de forma resumida, a Arquitetura de Von Neumann com a Arquitetura Harvard.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            A Arquitetura de Von Neumann utiliza uma única memória e um único barramento compartilhado para instruções e dados, o que é altamente flexível e otimiza o espaço, mas gera um gargalo de tráfego. A Arquitetura Harvard utiliza memórias físicas independentes e barramentos duplos separados (um para dados, outro para código), eliminando o gargalo, pois permite o acesso simultâneo a ambos, embora torne a construção do circuito mais complexa e cara.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">20. Analise como os princípios de Confidencialidade e Integridade podem ser afetados por vulnerabilidades estruturais da arquitetura.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Como a memória é um grande bloco linear unificado, o hardware base não sabe a quem pertencem os bits ali armazenados. Se não houvesse proteções de software (como a Unidade de Gerenciamento de Memória - MMU do Sistema Operacional), um programa poderia ler os dados de outro na mesma RAM (quebrando a Confidencialidade) ou alterar intencionalmente os dados ou o código de um programa concorrente (quebrando a Integridade). Soluções como Anéis de Proteção e bits de não-execução (NX Bit) foram criadas justamente para mitigar essas falhas estruturais.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

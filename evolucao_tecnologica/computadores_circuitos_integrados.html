@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação - Circuitos Integrados</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --highlight-bg: #fff3cd;
+            --highlight-text: #856404;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --answer-bg: #e8f4f8;
+            --answer-border: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+
+        .questao {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid #ddd;
+        }
+
+        .enunciado {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .alternativas {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .alternativa {
+            padding: 5px 10px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+
+        .correta {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            font-weight: bold;
+            border: 1px dashed var(--highlight-text);
+        }
+
+        /* Estilo para as respostas discursivas */
+        .resposta-discursiva {
+            background-color: var(--answer-bg);
+            border-left: 4px solid var(--answer-border);
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+        }
+        
+        .label-resposta {
+            font-weight: bold;
+            font-style: normal;
+            color: var(--answer-border);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+            .correta { background-color: yellow !important; -webkit-print-color-adjust: exact; }
+            .resposta-discursiva { background-color: #f0f0f0 !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📘 Avaliação – Circuitos Integrados</h1>
+
+    <h2>🟢 Parte I – Questões Objetivas (1–10)</h2>
+
+    <div class="questao">
+        <span class="enunciado">1. O circuito integrado marcou qual geração dos computadores?</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Primeira</li>
+            <li class="alternativa">b) Segunda</li>
+            <li class="alternativa correta">c) Terceira</li>
+            <li class="alternativa">d) Quarta</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">2. O circuito integrado foi inventado inicialmente por:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Alan Turing</li>
+            <li class="alternativa correta">b) Jack Kilby</li>
+            <li class="alternativa">c) John von Neumann</li>
+            <li class="alternativa">d) Howard Aiken</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">3. Jack Kilby trabalhava na:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) IBM</li>
+            <li class="alternativa">b) Microsoft</li>
+            <li class="alternativa correta">c) Texas Instruments</li>
+            <li class="alternativa">d) Intel</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">4. Robert Noyce estava associado à empresa:</span>
+        <ul class="alternativas">
+            <li class="alternativa correta">a) Fairchild Semiconductor</li>
+            <li class="alternativa">b) Apple</li>
+            <li class="alternativa">c) HP</li>
+            <li class="alternativa">d) Dell</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">5. O principal material usado na fabricação dos circuitos integrados é:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Ferro</li>
+            <li class="alternativa">b) Cobre</li>
+            <li class="alternativa correta">c) Silício</li>
+            <li class="alternativa">d) Alumínio</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">6. A principal vantagem dos circuitos integrados sobre os transistores discretos foi:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Aumento de tamanho</li>
+            <li class="alternativa">b) Maior consumo de energia</li>
+            <li class="alternativa correta">c) Miniaturização e maior confiabilidade</li>
+            <li class="alternativa">d) Uso de válvulas</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">7. O IBM System/360 pertence à geração:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Primeira</li>
+            <li class="alternativa">b) Segunda</li>
+            <li class="alternativa correta">c) Terceira</li>
+            <li class="alternativa">d) Quarta</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">8. SSI significa:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Super System Integration</li>
+            <li class="alternativa correta">b) Small Scale Integration</li>
+            <li class="alternativa">c) Standard Silicon Integration</li>
+            <li class="alternativa">d) Simple System Interface</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">9. VLSI significa:</span>
+        <ul class="alternativas">
+            <li class="alternativa correta">a) Very Large Scale Integration</li>
+            <li class="alternativa">b) Virtual Logic System Integration</li>
+            <li class="alternativa">c) Variable Large Silicon Integration</li>
+            <li class="alternativa">d) Visual Logic Scale Integration</li>
+        </ul>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">10. A evolução dos circuitos integrados possibilitou o surgimento do:</span>
+        <ul class="alternativas">
+            <li class="alternativa">a) Ábaco</li>
+            <li class="alternativa">b) Computador mecânico</li>
+            <li class="alternativa correta">c) Microprocessador</li>
+            <li class="alternativa">d) Computador a válvula</li>
+        </ul>
+    </div>
+
+    <h2>🟡 Questões Discursivas</h2>
+
+    <div class="questao">
+        <span class="enunciado">11. Explique o que é um circuito integrado.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Um circuito integrado (CI), ou chip, é um conjunto complexo de componentes eletrônicos miniaturizados — primariamente transistores, resistores e capacitores — fabricados de forma monolítica sobre uma única pastilha (wafer) de material semicondutor, geralmente silício. Diferente dos circuitos tradicionais, os componentes e suas interconexões são gravados diretamente no substrato, formando um sistema indissociável.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">12. Quais problemas da geração anterior foram resolvidos com o uso de CIs?</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Os CIs resolveram o problema conhecido como a "Tirania dos Números". Na segunda geração, computadores avançados exigiam centenas de milhares de transistores discretos que precisavam ser soldados manualmente um a um. Isso gerava um limite físico para a complexidade: quanto mais componentes, mais cara era a fabricação e mais provável era a falha de uma solda, comprometendo a confiabilidade de todo o sistema. Os CIs eliminaram as soldas externas entre componentes lógicos, barateando a produção e reduzindo drasticamente as falhas físicas, além de diminuir o tamanho e o consumo de energia.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">13. Compare transistores discretos e circuitos integrados.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Um transistor discreto é um componente eletrônico individual, encapsulado em seu próprio invólucro plástico ou metálico, possuindo seus próprios terminais físicos para ser conectado a uma placa de circuito impresso. Um circuito integrado, por outro lado, abriga milhares (ou bilhões) de transistores microscópicos construídos simultaneamente no mesmo pedaço de silício, já interconectados internamente, formando portas lógicas completas ou processadores em um espaço que abrigaria apenas um único transistor discreto.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">14. Explique a importância do processo planar desenvolvido por Robert Noyce.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            O processo planar de Noyce permitiu que os componentes eletrônicos fossem fabricados e interconectados em uma superfície plana de silício usando camadas de óxido para isolamento e trilhas de alumínio depositadas por cima para condução. Isso tornou a fabricação de circuitos integrados muito mais prática e escalável comercialmente, pois permitia que chips inteiros fossem "impressos" simultaneamente usando técnicas de fotolitografia, sendo o método padrão de fabricação de semicondutores até os dias de hoje.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">15. Qual foi a importância do IBM System/360 para a padronização da computação?</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            O IBM System/360 foi revolucionário por introduzir o conceito de "arquitetura de família" de computadores. Antes dele, cada novo computador exigia um software reescrito do zero. O System/360 oferecia uma linha de máquinas com a mesma arquitetura de conjunto de instruções (ISA), desde as mais baratas até as mais potentes. Isso garantiu compatibilidade: um programa escrito para um modelo inferior rodava nos modelos superiores, protegendo o gigantesco investimento em desenvolvimento de software das empresas e estabelecendo um padrão comercial na indústria.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">16. Diferencie SSI, MSI, LSI e VLSI.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            São siglas que classificam os chips pela escala de integração (densidade de componentes lógicos):<br>
+            • <b>SSI (Small Scale Integration):</b> Dezenas de transistores por chip (portas lógicas simples como AND, OR, NOT).<br>
+            • <b>MSI (Medium Scale Integration):</b> Centenas de transistores (multiplexadores, decodificadores).<br>
+            • <b>LSI (Large Scale Integration):</b> Milhares de transistores (memórias, chips lógicos complexos).<br>
+            • <b>VLSI (Very Large Scale Integration):</b> Dezenas de milhares a milhões de transistores, escala que permitiu o desenvolvimento de microprocessadores completos em um único chip.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">17. Explique como os circuitos integrados contribuíram para a miniaturização da eletrônica.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Ao transferir a construção dos circuitos da escala macroscópica (placas de circuito com centímetros e soldas visíveis) para a escala microscópica no silício (medida em micrômetros e posteriormente em nanômetros), uma placa que ocupava o espaço de um armário passou a caber na ponta de um dedo. Os processos fotolitográficos possibilitaram encolher o tamanho do transistor progressivamente, o que, consequentemente, encolheu o tamanho geral dos equipamentos eletrônicos.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">18. Descreva o impacto dos circuitos integrados na indústria e na sociedade.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Na indústria, eles tornaram possível a automação massiva, a criação de computadores de bordo avançados (como os usados no Programa Apollo) e a viabilidade econômica do software. Na sociedade, eles desencadearam a Terceira Revolução Industrial (Revolução Digital). Acessórios como calculadoras, relógios digitais, rádios portáteis, aparelhos médicos e, eventualmente, computadores domésticos e smartphones, só se tornaram economicamente viáveis e portáteis graças aos circuitos integrados.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">19. Por que os circuitos integrados são considerados um divisor de águas na história da computação?</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Eles são um divisor de águas porque mudaram o paradigma do custo e da capacidade na computação, fundamentando a "Lei de Moore" (a observação de que o número de transistores em um chip dobrava aproximadamente a cada dois anos). Eles provaram que o poder computacional poderia crescer de forma exponencial enquanto o custo e o tamanho diminuíam na mesma proporção — uma característica tecnológica única na história humana, responsável por praticamente todo o ecossistema digital contemporâneo.
+        </div>
+    </div>
+
+    <div class="questao">
+        <span class="enunciado">20. Relacione a evolução dos circuitos integrados com o surgimento dos computadores pessoais.</span>
+        <div class="resposta-discursiva">
+            <span class="label-resposta">Resposta:</span>
+            Sem a altíssima escala de integração (VLSI), não seria possível concentrar as funções de uma Unidade Central de Processamento (CPU) inteira — que antes ocupava placas imensas — em um único componente minúsculo e de baixo custo. A invenção desse chip (o microprocessador) reduziu drasticamente o custo de fabricação de um sistema computacional, permitindo que empresas projetassem máquinas pequenas e baratas o suficiente para que usuários comuns pudessem comprá-las e acomodá-las em uma mesa residencial, dando origem aos computadores pessoais (PCs).
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
