@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositório de Engenharia de Software</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --hover-bg: #e8f4f8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        p.subtitle {
+            font-size: 18px;
+            color: #7f8c8d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .category-title {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #eaeaea;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            background-color: var(--hover-bg);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: var(--primary-color);
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 14px;
+            color: #7f8c8d;
+            flex-grow: 1;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>📚 Guias de Estudo e Avaliações</h1>
+        <p class="subtitle">Repositório de História da Computação e Arquitetura de Hardware.</p>
+    </header>
+
+    <main>
+        <h2 class="category-title">Fundamentos e Lógica</h2>
+        <div class="grid">
+            <a href="sistemas_de_numeracao/sistemas_de_numeracao_exercicios.html" class="card">
+                <div class="icon">🔢</div>
+                <h3>Sistemas de Numeração</h3>
+                <p>Binários, hexadecimais e aritmética computacional.</p>
+            </a>
+            <a href="modelo_von_neumann/exercicios_neumann.html" class="card">
+                <div class="icon">🧠</div>
+                <h3>Arquitetura Von Neumann</h3>
+                <p>O conceito de programa armazenado e unidade central.</p>
+            </a>
+            <a href="modelo_harvard/exercicios_harvard.html" class="card">
+                <div class="icon">🏛️</div>
+                <h3>Arquitetura Harvard</h3>
+                <p>Separação de barramentos de dados e instruções.</p>
+            </a>
+        </div>
+
+        <h2 class="category-title">Evolução Tecnológica</h2>
+        <div class="grid">
+            <a href="evolucao_tecnologica/computadores_mecanicos.html" class="card">
+                <div class="icon">⚙️</div>
+                <h3>Computadores Mecânicos</h3>
+                <p>Pascalina, Máquina Analítica e os primórdios.</p>
+            </a>
+            <a href="evolucao_tecnologica/computadores_a_valvulas.html" class="card">
+                <div class="icon">🏮</div>
+                <h3>Válvulas</h3>
+                <p>A primeira geração de computadores eletrônicos.</p>
+            </a>
+            <a href="evolucao_tecnologica/computadores_transitores.html" class="card">
+                <div class="icon">🔌</div>
+                <h3>Transistores</h3>
+                <p>A revolução que deu início à miniaturização.</p>
+            </a>
+            <a href="evolucao_tecnologica/computadores_circuitos_integrados.html" class="card">
+                <div class="icon">🔳</div>
+                <h3>Circuitos Integrados</h3>
+                <p>A era dos chips e mainframes modernos.</p>
+            </a>
+            <a href="evolucao_tecnologica/computadores_microprocessadores.html" class="card">
+                <div class="icon">🖧</div>
+                <h3>Microprocessadores</h3>
+                <p>O surgimento dos computadores pessoais.</p>
+            </a>
+        </div>
+
+        <h2 class="category-title">Componentes e I/O</h2>
+        <div class="grid">
+            <a href="dispositivos_entrada_saida/teclados.html" class="card">
+                <div class="icon">⌨️</div>
+                <h3>Teclados</h3>
+                <p>História do QWERTY e tecnologias de switches.</p>
+            </a>
+            <a href="dispositivos_entrada_saida/mouses.html" class="card">
+                <div class="icon">🖱️</div>
+                <h3>Mouses</h3>
+                <p>Sensores ópticos e evolução da interface gráfica.</p>
+            </a>
+            <a href="dispositivos_entrada_saida/monitores.html" class="card">
+                <div class="icon">🖥️</div>
+                <h3>Monitores</h3>
+                <p>Transição do CRT às telas OLED modernas.</p>
+            </a>
+            <a href="dispositivos_entrada_saida/impressoras.html" class="card">
+                <div class="icon">🖨️</div>
+                <h3>Impressoras</h3>
+                <p>De Gutenberg às impressoras 3D atuais.</p>
+            </a>
+            <a href="dispositivos_entrada_saida/dispositivos_de_audio.html" class="card">
+                <div class="icon">🎵</div>
+                <h3>Dispositivos de Áudio</h3>
+                <p>Fonógrafos, CDs e a revolução digital.</p>
+            </a>
+            <a href="dispositivos_entrada_saida/captura_de_imagens.html" class="card">
+                <div class="icon">📷</div>
+                <h3>Captura de Imagem</h3>
+                <p>Fotografia digital e a evolução das câmeras.</p>
+            </a>
+            <a href="dispositivos_entrada_saida/dispositivos_biometricos_e_especializados.html" class="card">
+                <div class="icon">🧬</div>
+                <h3>Biometria</h3>
+                <p>Segurança e dispositivos especializados.</p>
+            </a>
+            <a href="dispositivos_entrada_saida/dispositivos_de_controle_e_jogos.html" class="card">
+                <div class="icon">🎮</div>
+                <h3>Jogos</h3>
+                <p>Evolução dos controles e interfaces lúdicas.</p>
+            </a>
+        </div>
+
+        <h2 class="category-title">Mídia e Sistema Operacional</h2>
+        <div class="grid">
+            <a href="analise_filmica/exercicio_steve_jobs.html" class="card">
+                <div class="icon">🍏</div>
+                <h3>Filme: Steve Jobs (2015)</h3>
+                <p>Análise da obra e contexto tecnológico.</p>
+            </a>
+            <a href="analise_filmica/os_piratas_exercicios.html" class="card">
+                <div class="icon">🏴‍☠️</div>
+                <h3>Piratas do Vale do Silício</h3>
+                <p>A disputa histórica entre Apple e Microsoft.</p>
+            </a>
+            <a href="componentes_de_um_sistema_operacional/componentes_de_um_sistema_operacional.html" class="card">
+                <div class="icon">⚙️</div>
+                <h3>Sistemas Operacionais</h3>
+                <p>Estrutura, kernel e gerenciamento de recursos.</p>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Projeto de Lucas Meggiato • Software Engineering Student</p>
+    </footer>
+</div>
+
+</body>
+</html>

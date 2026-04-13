@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliação - Monitores e Telas</title>
     <style>
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 25px;
+            padding: 8px 15px;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .btn-voltar:hover {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+
+        @media print {
+            .btn-voltar { display: none; } /* Oculta o botão na hora de imprimir */
+        }
         :root {
             --primary-color: #2c3e50;
             --highlight-bg: #fff3cd;
@@ -100,6 +121,7 @@
 <body>
 
 <div class="container">
+    <a href="index.html" class="btn-voltar">⬅ Voltar para o Início</a>
     <h1>🖥️ Avaliação – Monitores</h1>
 
     <div class="questao">
